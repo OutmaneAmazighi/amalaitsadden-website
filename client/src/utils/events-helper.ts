@@ -1,4 +1,4 @@
-import eventsData from '../data/events.json';
+import eventsData from './events.json';
 import { format, parseISO } from 'date-fns';
 import type { Locale } from 'date-fns';
 import { de, fr, enUS, ar } from 'date-fns/locale';
