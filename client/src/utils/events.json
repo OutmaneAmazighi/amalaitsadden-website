@@ -1,0 +1,60 @@
+[
+  {
+    "date": "2024-01-14",
+    "title": "ندوة دولية حول إقرار رأس السنة الأمازيغية عطلة رسمية",
+    "location": "Palais Médina & SPA, Fès",
+    "description": "شاركت الجمعية إلى جانب مؤسسات أخرى في تنظيم ندوة دولية بمدينة فاس حول دلالات ورسائل إقرار الملك محمد السادس رأس السنة الأمازيغية عطلة رسمية.",
+    "main_photo_url": "/images/events/amazigh-conference.jpg",
+    "gallery": [
+      "/images/events/amazigh-gallery1.jpg",
+      "/images/events/amazigh-gallery2.jpg"
+    ]
+  },
+  {
+    "date": "2023-05-21",
+    "title": "قافلة طبية متعددة التخصصات",
+    "location": "دوار أيت كايس، كندر سيدي خيار",
+    "description": "قافلة طبية نظمتها الجمعية بشراكة مع المندوبية الإقليمية للصحة وجمعيات أخرى، استفاد منها أكثر من 600 شخص.",
+    "main_photo_url": "/images/events/medical-caravan.jpg",
+    "gallery": [
+      "/images/events/medical-gallery1.jpg",
+      "/images/events/medical-gallery2.jpg",
+      "/images/events/medical-gallery3.jpg",
+      "/images/events/medical-gallery4.jpg"
+    ]
+  },
+  {
+    "date": "2023-04-23",
+    "title": "حفل اختتام مسابقة تجويد القرآن الكريم",
+    "location": "رأس تبودة",
+    "description": "حفل ديني بمناسبة اختتام الدورة الثانية لمسابقة تجويد القرآن الكريم، بحضور عدد من الشخصيات وتكريم الفائزين.",
+    "main_photo_url": "/images/events/quran-competition.jpg",
+    "gallery": [
+      "/images/events/quran-gallery1.jpg",
+      "/images/events/quran-gallery2.jpg"
+    ]
+  },
+  {
+    "date": "2022-03-20",
+    "title": "يوم المرأة السادنية والعمل الجمعوي",
+    "location": "رأس تبودة",
+    "description": "يوم تواصلي احتفاءً بالمرأة في آيت سادن وتكريم نساء متميزات في مجالات مختلفة.",
+    "main_photo_url": "/images/events/women-day.jpg",
+    "gallery": [
+      "/images/events/women-gallery1.jpg",
+      "/images/events/women-gallery2.jpg"
+    ]
+  },
+  {
+    "date": "2020-09-07",
+    "title": "حملة توعوية ضد مخاطر كوفيد-19",
+    "location": "رأس تبودة، سوق أسبوعي",
+    "description": "نشاط تحسيسي بالتنسيق مع الهلال الأخضر لتوعية السكان حول الوقاية من فيروس كورونا وتوزيع الكمامات.",
+    "main_photo_url": "/images/events/covid-awareness.jpg",
+    "gallery": [
+      "/images/events/covid-gallery1.jpg",
+      "/images/events/covid-gallery2.jpg",
+      "/images/events/covid-gallery3.jpg"
+    ]
+  }
+]
