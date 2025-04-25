@@ -95,6 +95,11 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     fr: "Caravane médicale multi-spécialités",
     en: "Multidisciplinary Medical Caravan"
   },
+  "قافلة طبية تضامنية": {
+    de: "Solidarische medizinische Karawane",
+    fr: "Caravane médicale solidaire",
+    en: "Solidarity Medical Caravan"
+  },
   "اغبالو اقورار": {
     de: "Aghbalou Akourar",
     fr: "Aghbalou Akourar",
@@ -160,6 +165,11 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     fr: "Lycée Tarik Ibn Ziad, Ras Tabouda, Sefrou",
     en: "Tarik Ibn Ziad High School, Ras Tabouda, Sefrou"
   },
+  "دوار آيت ابراهيم، سيدي يوسف بن احمد": {
+    de: "Douar Ait Ibrahim, Sidi Youssef Ben Ahmed",
+    fr: "Douar Ait Ibrahim, Sidi Youssef Ben Ahmed",
+    en: "Douar Ait Ibrahim, Sidi Youssef Ben Ahmed"
+  },
   "نظرا للظروف الاسثنائية التي تمر فيها امتحانات الباكالوريا هذه السنة قام أعضاء جمعية أمال آيت سادن للتنمية المستدامة بمبادرة تحفيزية لفائدة تلاميذ ثانوية طارق بن زياد و ذالك بتوزيع قنينة ماء و ياغورت و بسكويت كما تعتزم الجمعية القيام بعملية تعقيم لكل مرافق المؤسسة.": {
     de: "Angesichts der außergewöhnlichen Umstände der Abiturprüfungen in diesem Jahr haben die Mitglieder des Vereins Amal Ait Sadden für nachhaltige Entwicklung eine Motivationsinitiative für die Schüler der Tarik Ibn Ziad Schule gestartet, indem sie Wasserflaschen, Joghurt und Kekse verteilten. Der Verein plant auch, alle Schuleinrichtungen zu desinfizieren.",
     fr: "En raison des circonstances exceptionnelles des examens du baccalauréat cette année, les membres de l'Association Amal Ait Sadden pour le développement durable ont lancé une initiative motivante pour les élèves du lycée Tarik Ibn Ziad en distribuant des bouteilles d'eau, des yaourts et des biscuits. L'association prévoit également de désinfecter toutes les installations de l'établissement.",
@@ -184,6 +194,11 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     de: "Der Verein Amal Ait Sadden für nachhaltige Entwicklung und der Verein Jaber für ländliche Entwicklung und Umwelt organisierten in Zusammenarbeit mit der Gemeinde Ras Tabouda und in Partnerschaft mit der regionalen Gesundheitsdelegation von Sefrou, dem Rotaract Club der medizinischen Fakultät Fes und dem FEMSA Club eine multidisziplinäre medizinische Karawane, von der mehr als 800 Menschen profitierten. Vielen Dank an den Leiter der Führung von Ras Tabouda, die Behördenvertreter, die Hilfsstreitkräfte, die Königliche Gendarmerie und den Vorsitzenden der Gemeinde Bir Tam Tam, der Hilfe leistete, sowie an die Mitarbeiter der Gemeinde Ras Tabouda, die wesentlich zum Erfolg dieser Karawane beigetragen haben.",
     fr: "L'Association Amal Ait Sadden pour le développement durable et l'Association Jaber pour le développement rural et environnemental, en partenariat avec la commune de Ras Tabouda et en partenariat avec la délégation provinciale de la santé de Sefrou, le club Rotaract de la faculté de médecine de Fès et le club FEMSA, ont organisé une caravane médicale multidisciplinaire qui a bénéficié à plus de 800 personnes. Tous les remerciements et l'appréciation au Caïd du commandement de Ras Tabouda, aux agents d'autorité, aux forces auxiliaires, à la Gendarmerie Royale et au président de la commune de Bir Tam Tam qui a prêté main-forte, ainsi qu'aux fonctionnaires de la commune de Ras Tabouda qui ont grandement contribué au succès de cette caravane.",
     en: "The Amal Ait Sadden Association for Sustainable Development and the Jaber Association for Rural and Environmental Development, in partnership with the Ras Tabouda commune and in partnership with the Provincial Health Delegation of Sefrou, the Rotaract Club of the Faculty of Medicine of Fez, and the FEMSA Club, organized a multidisciplinary medical caravan that benefited more than 800 people. Many thanks to the Caid of the Ras Tabouda command, the authority agents, the auxiliary forces, the Royal Gendarmerie, and the president of the Bir Tam Tam commune who provided assistance, as well as to the employees of the Ras Tabouda commune who greatly contributed to the success of this caravan."
+  },
+  "تنظم جمعية امال ايت سادن للتنمية المستدامة بشراكة مع جمعية femsa وباقي شركائها المندوبية الإقليمية للصحة بصفرو، DHL ومؤسسة سيدي عبد الرحمن الودغيري قافلة طبية تضامنية يوم 11  مارس 2023 ،بدوار آيت ابراهيم جماعة سيدي يوسف بن احمد": {
+    de: "Der Verein Amal Ait Sadden für nachhaltige Entwicklung organisiert in Partnerschaft mit dem FEMSA-Verein und seinen anderen Partnern, der Provinzdelegation für Gesundheit in Sefrou, DHL und der Stiftung Sidi Abderrahman Al Oudghiri, am 11. März 2023 eine solidarische medizinische Karawane im Dorf Ait Ibrahim in der Gemeinde Sidi Youssef Ben Ahmed.",
+    fr: "L'Association Amal Ait Sadden pour le développement durable organise, en partenariat avec l'association FEMSA et ses autres partenaires, la délégation provinciale de la santé de Sefrou, DHL et la Fondation Sidi Abderrahman Al Oudghiri, une caravane médicale solidaire le 11 mars 2023 au douar Ait Ibrahim, commune de Sidi Youssef Ben Ahmed.",
+    en: "The Amal Ait Sadden Association for Sustainable Development, in partnership with the FEMSA association and its other partners, the Provincial Health Delegation of Sefrou, DHL, and the Sidi Abderrahman Al Oudghiri Foundation, is organizing a solidarity medical caravan on March 11, 2023, in the village of Ait Ibrahim in the commune of Sidi Youssef Ben Ahmed."
   },
   "تنزيلا لبرنامجها التنموي لجميعة آمال ايت سادن للتنمية المستدامة بشراكة مع جمعية خبراء متطوعون من اجل التنمية و جمعية جيبر و جمعية النور أيت جابر وبتنسيق مع جماعة رأس تبودة نظمت اليوم رحلة استكشافية لكل من عين السخونات وعين الوالي التابعة لجماعة اغبالو اقورار و كان هدف هذه الرحلة هو الوقوف على المسار الرابط بين هذه المنابع الغنية بالمياه الصالحة للشرب وبطبيعتها الخلابة من اجل خلق منتجعات في هذه المناطق لتشجيع السياحة الداخلية و المحلية": {
     de: "Im Rahmen ihres Entwicklungsprogramms organisierte der Verein Amal Ait Sadden für nachhaltige Entwicklung in Zusammenarbeit mit dem Verein der freiwilligen Experten für Entwicklung, dem Jaber-Verein und dem Nour Ait Jaber-Verein und in Koordination mit der Gemeinde Ras Tabouda heute eine Erkundungsreise zu den Quellen Ain Sakhounat und Ain Al Wali, die zur Gemeinde Aghbalou Akourar gehören. Das Ziel dieser Reise war es, den Weg zwischen diesen an Trinkwasser reichen Quellen mit ihrer atemberaubenden Natur zu erkunden, um in diesen Gebieten Resorts zu schaffen und den inländischen und lokalen Tourismus zu fördern.",
