@@ -95,6 +95,11 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     fr: "Caravane médicale multi-spécialités",
     en: "Multidisciplinary Medical Caravan"
   },
+  "قافلة طبية متعددة الاختصاصات": {
+    de: "Multi-Fachärztliche medizinische Karawane",
+    fr: "Caravane médicale multi-spécialités",
+    en: "Multi-specialty Medical Caravan"
+  },
   "قافلة طبية تضامنية": {
     de: "Solidarische medizinische Karawane",
     fr: "Caravane médicale solidaire",
@@ -180,6 +185,11 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     fr: "Douar Ait Ibrahim, Sidi Youssef Ben Ahmed",
     en: "Douar Ait Ibrahim, Sidi Youssef Ben Ahmed"
   },
+  "دوار ايت كايس جماعة كندر سيدي خيار": {
+    de: "Douar Ait Kais, Gemeinde Kandar Sidi Khiar",
+    fr: "Douar Ait Kais, commune de Kandar Sidi Khiar",
+    en: "Douar Ait Kais, Kandar Sidi Khiar commune"
+  },
   "رأس تبودة / بئر طم طم، صفرو": {
     de: "Ras Tabouda / Bir Tam Tam, Sefrou",
     fr: "Ras Tabouda / Bir Tam Tam, Sefrou",
@@ -214,6 +224,11 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     de: "Der Verein Amal Ait Sadden für nachhaltige Entwicklung organisiert in Partnerschaft mit dem FEMSA-Verein und seinen anderen Partnern, der Provinzdelegation für Gesundheit in Sefrou, DHL und der Stiftung Sidi Abderrahman Al Oudghiri, am 11. März 2023 eine solidarische medizinische Karawane im Dorf Ait Ibrahim in der Gemeinde Sidi Youssef Ben Ahmed.",
     fr: "L'Association Amal Ait Sadden pour le développement durable organise, en partenariat avec l'association FEMSA et ses autres partenaires, la délégation provinciale de la santé de Sefrou, DHL et la Fondation Sidi Abderrahman Al Oudghiri, une caravane médicale solidaire le 11 mars 2023 au douar Ait Ibrahim, commune de Sidi Youssef Ben Ahmed.",
     en: "The Amal Ait Sadden Association for Sustainable Development, in partnership with the FEMSA association and its other partners, the Provincial Health Delegation of Sefrou, DHL, and the Sidi Abderrahman Al Oudghiri Foundation, is organizing a solidarity medical caravan on March 11, 2023, in the village of Ait Ibrahim in the commune of Sidi Youssef Ben Ahmed."
+  },
+  "بتاريخ 21 ماي 2023 نظمت جمعية امال ايت سادن قافلة طبية متعددة الاختصاصات بدوار ايت كايس جماعة كندر سيدي خيار،بشراكة مع المندوبية الإقليمية للصحة والحماية الاجتماعية والعصبة المغربية لمحاربة داء السل وجمعية أفوس.واستفاد من هذه القافلة أزيد من 600 مستفيد. الشكر موصول للسيد المندوب الإقليمي للصحة بإقليم صفرو على مواكبته والسلطات المحلية التي حرصت على تنظيم وتأطير الساكنة،ولكل من حضر هذه المساهمة في هذه المبادرة الإنسانية والاجتماعية.": {
+    de: "Am 21. Mai 2023 organisierte der Verein Amal Ait Sadden eine multi-spezialisierte medizinische Karawane im Dorf Ait Kais in der Gemeinde Kandar Sidi Khiar, in Partnerschaft mit der Provinzdelegation für Gesundheit und Sozialschutz, der Marokkanischen Liga zur Bekämpfung der Tuberkulose und dem Verein Afous. Mehr als 600 Menschen profitierten von dieser Karawane. Unser Dank gilt dem Provinzbeauftragten für Gesundheit in der Provinz Sefrou für seine Unterstützung und den lokalen Behörden, die für die Organisation und Betreuung der Einwohner gesorgt haben, sowie allen, die zu dieser humanitären und sozialen Initiative beigetragen haben.",
+    fr: "Le 21 mai 2023, l'Association Amal Ait Sadden a organisé une caravane médicale multi-spécialités dans le village d'Ait Kais, commune de Kandar Sidi Khiar, en partenariat avec la délégation provinciale de la santé et de la protection sociale, la Ligue marocaine de lutte contre la tuberculose et l'Association Afous. Plus de 600 personnes ont bénéficié de cette caravane. Nos remerciements au délégué provincial de la santé de la province de Sefrou pour son accompagnement, aux autorités locales qui ont veillé à l'organisation et à l'encadrement des habitants, et à tous ceux qui ont contribué à cette initiative humanitaire et sociale.",
+    en: "On May 21, 2023, the Amal Ait Sadden Association organized a multi-specialty medical caravan in the village of Ait Kais, Kandar Sidi Khiar commune, in partnership with the Provincial Delegation of Health and Social Protection, the Moroccan League for Tuberculosis Control, and the Afous Association. More than 600 people benefited from this caravan. Our thanks go to the Provincial Delegate of Health in Sefrou Province for his support and to the local authorities who ensured the organization and supervision of the residents, and to everyone who participated in this humanitarian and social initiative."
   },
   "نظمت جمعية آمال آيت سادن حفلا دينيا بمناسبة اختتام الدورة الثانية لمسابقة تجويد القرآن الكريم والتي عرفت نجاحا كبيرا. عرف الحفل تتويج الفائزين بالمسابقة وكذلك المشاركين بحضور السيد عبد العالي دمري والسيد عبد الله برحو ممثلي غرفة الفلاحة.والسيدة فتيحة رواق ممثلة جماعة رأس تبودة،والسيدة نادية حصيطو ممثلة المجلس الإقليمي بالإضافة إلى فعاليات جمعوية. كما تتقدم جمعية آمال آيت سادن للتنمية المستدامة بالشكر الجزيل لجمعية آيت سادن للرياضة في شخص رئيسها السيد محمد حساني. هنيئا للفائزين والمشاركين وبالتوفيق في مسارهم العلمي والديني.": {
     de: "Der Verein Amal Ait Sadden organisierte eine religiöse Feier zum Abschluss der zweiten Ausgabe des Quran-Rezitationswettbewerbs, der ein großer Erfolg war. Bei der Veranstaltung wurden die Gewinner des Wettbewerbs sowie die Teilnehmer in Anwesenheit von Herrn Abdelali Damri und Herrn Abdullah Barhou, Vertretern der Landwirtschaftskammer, Frau Fatiha Rawaq, Vertreterin der Gemeinde Ras Tabouda, und Frau Nadia Haseito, Vertreterin des Provinzrats, sowie weiterer Vereinsmitglieder geehrt. Der Verein Amal Ait Sadden für nachhaltige Entwicklung dankt dem Verein Ait Sadden für Sport in Person seines Präsidenten, Herrn Mohammed Hassani. Herzlichen Glückwunsch an die Gewinner und Teilnehmer und viel Erfolg auf ihrem wissenschaftlichen und religiösen Weg.",
