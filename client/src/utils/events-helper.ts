@@ -3,6 +3,13 @@ import { format, parseISO } from 'date-fns';
 import type { Locale } from 'date-fns';
 import { de, fr, enUS, ar } from 'date-fns/locale';
 
+// The image paths for our assets
+const mainImagePaths = [
+  '/images/activities/tree-planting.jpg',
+  '/images/activities/agriculture.jpg',
+  '/images/activities/festival.jpg'
+];
+
 // Define the Event interface from JSON structure
 export interface RealEvent {
   date: string;
@@ -137,6 +144,7 @@ const getTranslatedValue = (arabicValue: string, language: 'de' | 'fr' | 'en'): 
 };
 
 // Process the events data to add translations and format for our component
+
 export const getProcessedEvents = (): ProcessedEvent[] => {
   return eventsData.map((event: RealEvent, index: number) => {
     // Extract year from the date
@@ -144,6 +152,17 @@ export const getProcessedEvents = (): ProcessedEvent[] => {
     
     // Create a unique ID for the event
     const id = `event-${year}-${index}`;
+
+    // Use direct image URLs for each event
+    // Select an image based on the index, cycling through our available images
+    const mainImage = mainImagePaths[index % mainImagePaths.length];
+    
+    // Create a gallery array with images from our gallery folder
+    const gallery = [
+      '/images/activities/gallery/tree1.jpg',
+      '/images/activities/gallery/tree2.jpg',
+      '/images/activities/gallery/agri1.jpg'
+    ];
     
     return {
       id,
@@ -167,8 +186,8 @@ export const getProcessedEvents = (): ProcessedEvent[] => {
         fr: getTranslatedValue(event.description, 'fr'),
         en: getTranslatedValue(event.description, 'en')
       },
-      mainImage: event.main_photo_url,
-      gallery: event.gallery
+      mainImage: mainImage,
+      gallery: gallery
     };
   });
 };
