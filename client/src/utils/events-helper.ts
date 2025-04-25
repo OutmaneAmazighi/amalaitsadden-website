@@ -75,6 +75,11 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     fr: "Campagne de sensibilisation contre les risques de COVID-19",
     en: "Awareness Campaign Against COVID-19 Risks"
   },
+  "برنامج أوراش": {
+    de: "Awrach-Programm",
+    fr: "Programme Awrach",
+    en: "Awrach Program"
+  },
   "شاركت الجمعية إلى جانب مؤسسات أخرى في تنظيم ندوة دولية بمدينة فاس حول دلالات ورسائل إقرار الملك محمد السادس رأس السنة الأمازيغية عطلة رسمية.": {
     de: "Der Verein nahm zusammen mit anderen Institutionen an der Organisation einer internationalen Konferenz in Fes teil, die sich mit der Bedeutung und den Botschaften der Anerkennung des Amazigh-Neujahrs als offiziellen Feiertag durch König Mohammed VI. befasste.",
     fr: "L'association a participé, aux côtés d'autres institutions, à l'organisation d'un colloque international à Fès sur les significations et les messages de la reconnaissance par le Roi Mohammed VI du Nouvel An amazigh comme jour férié officiel.",
@@ -139,6 +144,11 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     de: "Am Montag, den 7. September 2020, organisierte der Verein Amal Ait Sadden für nachhaltige Entwicklung eine Sensibilisierungsaktion zu den Risiken von COVID-19. Die Aktion wurde in Zusammenarbeit mit dem Grünen Halbmond und der Gemeinde Ras Tabouda und in Anwesenheit der lokalen Behörden, vertreten durch den Leiter von Ras Tabouda, durchgeführt. Es wurden Masken an die Bürger auf dem Wochenmarkt, in Cafés und in der Tarik Ibn Ziad Oberschule verteilt, und sie wurden über die Risiken von Corona und die notwendigen Maßnahmen zur Vermeidung von Infektionen und der Ausbreitung des Virus aufgeklärt.",
     fr: "Le lundi 7 septembre 2020, l'Association Amal Ait Sadden pour le développement durable a organisé une activité de sensibilisation contre les risques de COVID-19. L'activité a été coordonnée avec le Croissant Vert et la commune de Ras Tabouda, et en présence des autorités locales représentées par le Caïd de Ras Tabouda. Des masques ont été distribués aux citoyens dans le marché hebdomadaire, les cafés et le lycée Tarik Ibn Ziad, et ils ont été sensibilisés aux risques du coronavirus et aux mesures nécessaires à prendre pour éviter l'infection et la propagation du virus.",
     en: "On Monday, September 7, 2020, the Amal Ait Sadden Association for Sustainable Development organized an awareness activity against the risks of COVID-19. The activity was coordinated with the Green Crescent and the Ras Tabouda commune, and in the presence of local authorities represented by the Caid of Ras Tabouda. Masks were distributed to citizens in the weekly market, cafes, and Tarik Ibn Ziad High School, and they were educated about the risks of coronavirus and the necessary measures to take to avoid infection and virus spread."
+  },
+  "استمرار العمل الميداني لبرنامج أوراش بجماعة رأس تبودة في تهيئة ملعب كرة القدم واضفاء جمالية جديدة داخل مركز رأس تبودة وهذه بعض الصور في انتظار اتمام الورش بقيادة جمعية آمال ايت سادن للتنمية المستدامة إلى جانب جماعة رأس تبودة الشكر والتقدير للمجلس لانخراطه الفعال في هذا الورش": {
+    de: "Die Feldarbeit des Awrach-Programms in der Gemeinde Ras Tabouda wird fortgesetzt, um den Fußballplatz zu sanieren und dem Zentrum von Ras Tabouda eine neue ästhetische Note zu verleihen. Dies sind einige Bilder in Erwartung der Fertigstellung des Workshops unter der Leitung des Vereins Amal Ait Sadden für nachhaltige Entwicklung zusammen mit der Gemeinde Ras Tabouda. Dank und Anerkennung an den Rat für sein aktives Engagement in diesem Workshop.",
+    fr: "Poursuite du travail de terrain du programme Awrach dans la commune de Ras Tabouda pour réhabiliter le terrain de football et donner une nouvelle esthétique au centre de Ras Tabouda. Voici quelques photos en attendant l'achèvement du chantier dirigé par l'Association Amal Ait Sadden pour le développement durable ainsi que la commune de Ras Tabouda. Remerciements et appréciation au conseil pour son engagement actif dans ce chantier.",
+    en: "The fieldwork of the Awrach program in the Ras Tabouda commune continues to rehabilitate the football field and give new aesthetics to the Ras Tabouda center. These are some pictures awaiting the completion of the workshop led by the Amal Ait Sadden Association for Sustainable Development along with the Ras Tabouda commune. Thanks and appreciation to the council for its active involvement in this workshop."
   }
 };
 
