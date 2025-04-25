@@ -38,22 +38,24 @@ const Team: React.FC = () => {
           {translations[language].sections.team.title}
         </h2>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-6">
           {teamMembers.map((member, index) => (
             <div 
               key={index}
               ref={el => (teamRefs.current[index] = el as HTMLDivElement)}
-              className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 opacity-0"
+              className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 opacity-0 w-[150px] text-center"
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <img 
-                src={member.photo} 
-                alt={member.name} 
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold primary-dark-green mb-1">{member.name}</h3>
-                <p className={`primary-red mb-4 ${language === 'ar' ? 'font-amiri' : ''}`}>
+              <div className="flex justify-center pt-4">
+                <img 
+                  src={member.photo} 
+                  alt={member.name} 
+                  className="w-20 h-20 rounded-full object-cover border-2 border-primary-green"
+                />
+              </div>
+              <div className="p-3">
+                <h3 className="text-sm font-semibold primary-dark-green mb-1">{member.name}</h3>
+                <p className={`text-xs primary-red ${language === 'ar' ? 'font-amiri' : ''}`}>
                   {member.role[language]}
                 </p>
               </div>
