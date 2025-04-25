@@ -1,7 +1,6 @@
 import { useContext } from 'react';
 import { LanguageContext } from './LanguageContext';
 import { translations } from '../lib/translations';
-import logo from '@assets/logo.jpg';
 
 interface HeaderProps {
   toggleMobileMenu: () => void;
@@ -15,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ toggleMobileMenu }) => {
       <div className="container mx-auto px-4 py-2">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="flex items-center mb-4 md:mb-0">
-            <img src={logo} alt="Association Amal Ait Sadden Logo" className="h-16 mr-3" />
+            <img src="/images/logo.jpg" alt="Association Amal Ait Sadden Logo" className="h-16 mr-3" />
             <div>
               <h1 className={`text-lg md:text-xl font-bold primary-green ${language === 'ar' ? 'font-amiri rtl' : ''}`}>
                 {translations[language].ngoName}
@@ -30,25 +29,25 @@ const Header: React.FC<HeaderProps> = ({ toggleMobileMenu }) => {
                   className={`lang-btn p-1 rounded hover:bg-gray-100 ${language === 'de' ? 'ring-2 ring-primary-green' : ''}`} 
                   onClick={() => setLanguage('de')}
                 >
-                  <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/de.svg" alt="German" className="w-6 h-6" />
+                  <img src="/images/flags/de.svg" alt="German" className="w-6 h-6" />
                 </button>
                 <button 
                   className={`lang-btn p-1 rounded hover:bg-gray-100 ${language === 'fr' ? 'ring-2 ring-primary-green' : ''}`}
                   onClick={() => setLanguage('fr')}
                 >
-                  <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/fr.svg" alt="French" className="w-6 h-6" />
+                  <img src="/images/flags/fr.svg" alt="French" className="w-6 h-6" />
                 </button>
                 <button 
                   className={`lang-btn p-1 rounded hover:bg-gray-100 ${language === 'ar' ? 'ring-2 ring-primary-green' : ''}`}
                   onClick={() => setLanguage('ar')}
                 >
-                  <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/ma.svg" alt="Arabic" className="w-6 h-6" />
+                  <img src="/images/flags/ma.svg" alt="Arabic" className="w-6 h-6" />
                 </button>
                 <button 
                   className={`lang-btn p-1 rounded hover:bg-gray-100 ${language === 'en' ? 'ring-2 ring-primary-green' : ''}`}
                   onClick={() => setLanguage('en')}
                 >
-                  <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/gb.svg" alt="English" className="w-6 h-6" />
+                  <img src="/images/flags/gb.svg" alt="English" className="w-6 h-6" />
                 </button>
               </div>
             </div>
