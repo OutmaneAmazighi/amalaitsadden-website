@@ -297,14 +297,27 @@ export const formatDate = (dateString: string, localeString: string) => {
     ar: ar
   };
   
-  // For Arabic, use a custom format that properly respects RTL
+  // For Arabic, use a custom format with manually constructed text
   if (localeString === 'ar') {
-    // Get the day, month and year separately
-    const day = format(date, 'd', { locale: ar });
-    const month = format(date, 'MMMM', { locale: ar });
-    const year = format(date, 'yyyy', { locale: ar });
+    // Convert western numerals to Arabic numerals
+    const toArabicNumerals = (num: number): string => {
+      const arabicNumerals = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
+      return num.toString().split('').map(digit => 
+        isNaN(parseInt(digit)) ? digit : arabicNumerals[parseInt(digit)]
+      ).join('');
+    };
     
-    // Combine in RTL-friendly format
+    const day = toArabicNumerals(date.getDate());
+    const year = toArabicNumerals(date.getFullYear());
+    
+    // Arabic month names
+    const arabicMonths = [
+      'يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو',
+      'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'
+    ];
+    const month = arabicMonths[date.getMonth()];
+    
+    // Return in format: "20 يناير 2024"
     return `${day} ${month} ${year}`;
   }
   
