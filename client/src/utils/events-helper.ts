@@ -3,8 +3,8 @@ import { format, parseISO } from 'date-fns';
 import type { Locale } from 'date-fns';
 import { de, fr, enUS, ar } from 'date-fns/locale';
 
-// The image paths for our assets - using a single verified path for testing
-const NGO_LOGO_PATH = '/images/ngo/logo.jpg';
+// No longer using a constant path for images
+// Each event uses its own image paths
 
 // Define the Event interface from JSON structure
 export interface RealEvent {
@@ -45,6 +45,11 @@ export interface ProcessedEvent {
 
 // Translations for non-Arabic content
 const translations: Record<string, { de: string; fr: string; en: string }> = {
+  "مبادرة دعم طلاب الباكالوريا": {
+    de: "Initiative zur Unterstützung von Abiturprüflingen",
+    fr: "Initiative de soutien aux étudiants du baccalauréat",
+    en: "Initiative to Support Baccalaureate Students"
+  },
   "ندوة دولية حول إقرار رأس السنة الأمازيغية عطلة رسمية": {
     de: "Internationale Konferenz zur Anerkennung des Amazigh-Neujahrs als offizieller Feiertag",
     fr: "Conférence internationale sur la reconnaissance du Nouvel An amazigh comme jour férié officiel",
@@ -114,6 +119,16 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     de: "Ras Tabouda, Wochenmarkt",
     fr: "Ras Tabouda, marché hebdomadaire",
     en: "Ras Tabouda, weekly market"
+  },
+  "ثانوية طارق بن زياد، راس تابودة، صفرو": {
+    de: "Tarik Ibn Ziad Gymnasium, Ras Tabouda, Sefrou",
+    fr: "Lycée Tarik Ibn Ziad, Ras Tabouda, Sefrou",
+    en: "Tarik Ibn Ziad High School, Ras Tabouda, Sefrou"
+  },
+  "نظرا للظروف الاسثنائية التي تمر فيها امتحانات الباكالوريا هذه السنة قام أعضاء جمعية أمال آيت سادن للتنمية المستدامة بمبادرة تحفيزية لفائدة تلاميذ ثانوية طارق بن زياد و ذالك بتوزيع قنينة ماء و ياغورت و بسكويت كما تعتزم الجمعية القيام بعملية تعقيم لكل مرافق المؤسسة.": {
+    de: "Angesichts der außergewöhnlichen Umstände der Abiturprüfungen in diesem Jahr haben die Mitglieder des Vereins Amal Ait Sadden für nachhaltige Entwicklung eine Motivationsinitiative für die Schüler der Tarik Ibn Ziad Schule gestartet, indem sie Wasserflaschen, Joghurt und Kekse verteilten. Der Verein plant auch, alle Schuleinrichtungen zu desinfizieren.",
+    fr: "En raison des circonstances exceptionnelles des examens du baccalauréat cette année, les membres de l'Association Amal Ait Sadden pour le développement durable ont lancé une initiative motivante pour les élèves du lycée Tarik Ibn Ziad en distribuant des bouteilles d'eau, des yaourts et des biscuits. L'association prévoit également de désinfecter toutes les installations de l'établissement.",
+    en: "Due to the exceptional circumstances of the baccalaureate exams this year, members of the Amal Ait Sadden Association for Sustainable Development launched a motivational initiative for students of Tarik Ibn Ziad High School by distributing bottles of water, yogurt, and biscuits. The association also plans to disinfect all school facilities."
   }
 };
 
@@ -171,8 +186,8 @@ export const getProcessedEvents = (): ProcessedEvent[] => {
         fr: getTranslatedValue(event.description, 'fr'),
         en: getTranslatedValue(event.description, 'en')
       },
-      mainImage: NGO_LOGO_PATH,
-      gallery: [NGO_LOGO_PATH, NGO_LOGO_PATH]
+      mainImage: event.main_photo_url,
+      gallery: event.gallery
     };
   });
 };
