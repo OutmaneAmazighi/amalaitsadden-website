@@ -1,5 +1,28 @@
 [
   {
+    "date": "2022-09-18",
+    "title": "رحلة استكشافية",
+    "location": "اغبالو اقورار",
+    "description": "تنزيلا لبرنامجها التنموي لجميعة آمال ايت سادن للتنمية المستدامة بشراكة مع جمعية خبراء متطوعون من اجل التنمية و جمعية جيبر و جمعية النور أيت جابر وبتنسيق مع جماعة رأس تبودة نظمت اليوم رحلة استكشافية لكل من عين السخونات وعين الوالي التابعة لجماعة اغبالو اقورار و كان هدف هذه الرحلة هو الوقوف على المسار الرابط بين هذه المنابع الغنية بالمياه الصالحة للشرب وبطبيعتها الخلابة من اجل خلق منتجعات في هذه المناطق لتشجيع السياحة الداخلية و المحلية",
+    "main_photo_url": "/images/events/exploration2022/main.png",
+    "gallery": [
+      "/images/events/exploration2022/gallery1.png",
+      "/images/events/exploration2022/gallery2.png",
+      "/images/events/exploration2022/gallery3.png",
+      "/images/events/exploration2022/gallery4.png"
+    ]
+  },
+  {
+    "date": "2022-07-07",
+    "title": "برنامج أوراش",
+    "location": "رأس تبودة، صفرو",
+    "description": "استمرار العمل الميداني لبرنامج أوراش بجماعة رأس تبودة في تهيئة ملعب كرة القدم واضفاء جمالية جديدة داخل مركز رأس تبودة وهذه بعض الصور في انتظار اتمام الورش بقيادة جمعية آمال ايت سادن للتنمية المستدامة إلى جانب جماعة رأس تبودة الشكر والتقدير للمجلس لانخراطه الفعال في هذا الورش",
+    "main_photo_url": "/images/events/awrach2022/main.png",
+    "gallery": [
+      "/images/events/awrach2022/gallery1.png"
+    ]
+  },
+  {
     "date": "2020-07-04",
     "title": "مبادرة دعم طلاب الباكالوريا",
     "location": "ثانوية طارق بن زياد، راس تابودة، صفرو",
@@ -22,39 +45,6 @@
       "/images/events/covid2020/gallery2.png",
       "/images/events/covid2020/gallery3.png",
       "/images/events/covid2020/gallery4.png"
-    ]
-  },
-  {
-    "date": "2023-05-21",
-    "title": "قافلة طبية متعددة التخصصات",
-    "location": "دوار أيت كايس، كندر سيدي خيار",
-    "description": "قافلة طبية نظمتها الجمعية بشراكة مع المندوبية الإقليمية للصحة وجمعيات أخرى، استفاد منها أكثر من 600 شخص.",
-    "main_photo_url": "/images/activities/agriculture.jpg",
-    "gallery": [
-      "/images/activities/gallery/agri1.jpg",
-      "/images/activities/gallery/agri2.jpg",
-      "/images/activities/gallery/agri3.jpg"
-    ]
-  },
-  {
-    "date": "2023-04-23",
-    "title": "حفل اختتام مسابقة تجويد القرآن الكريم",
-    "location": "رأس تبودة",
-    "description": "حفل ديني بمناسبة اختتام الدورة الثانية لمسابقة تجويد القرآن الكريم، بحضور عدد من الشخصيات وتكريم الفائزين.",
-    "main_photo_url": "/images/activities/festival.jpg",
-    "gallery": [
-      "/images/activities/gallery/fest1.jpg",
-      "/images/activities/gallery/fest2.jpg"
-    ]
-  },
-  {
-    "date": "2022-07-07",
-    "title": "برنامج أوراش",
-    "location": "رأس تبودة، صفرو",
-    "description": "استمرار العمل الميداني لبرنامج أوراش بجماعة رأس تبودة في تهيئة ملعب كرة القدم واضفاء جمالية جديدة داخل مركز رأس تبودة وهذه بعض الصور في انتظار اتمام الورش بقيادة جمعية آمال ايت سادن للتنمية المستدامة إلى جانب جماعة رأس تبودة الشكر والتقدير للمجلس لانخراطه الفعال في هذا الورش",
-    "main_photo_url": "/images/events/awrach2022/main.png",
-    "gallery": [
-      "/images/events/awrach2022/gallery1.png"
     ]
   },
   {

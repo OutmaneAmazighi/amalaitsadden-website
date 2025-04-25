@@ -80,6 +80,16 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     fr: "Programme Awrach",
     en: "Awrach Program"
   },
+  "رحلة استكشافية": {
+    de: "Entdeckungsreise",
+    fr: "Voyage d'exploration",
+    en: "Exploratory Trip"
+  },
+  "اغبالو اقورار": {
+    de: "Aghbalou Akourar",
+    fr: "Aghbalou Akourar",
+    en: "Aghbalou Akourar"
+  },
   "شاركت الجمعية إلى جانب مؤسسات أخرى في تنظيم ندوة دولية بمدينة فاس حول دلالات ورسائل إقرار الملك محمد السادس رأس السنة الأمازيغية عطلة رسمية.": {
     de: "Der Verein nahm zusammen mit anderen Institutionen an der Organisation einer internationalen Konferenz in Fes teil, die sich mit der Bedeutung und den Botschaften der Anerkennung des Amazigh-Neujahrs als offiziellen Feiertag durch König Mohammed VI. befasste.",
     fr: "L'association a participé, aux côtés d'autres institutions, à l'organisation d'un colloque international à Fès sur les significations et les messages de la reconnaissance par le Roi Mohammed VI du Nouvel An amazigh comme jour férié officiel.",
@@ -149,6 +159,11 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     de: "Die Feldarbeit des Awrach-Programms in der Gemeinde Ras Tabouda wird fortgesetzt, um den Fußballplatz zu sanieren und dem Zentrum von Ras Tabouda eine neue ästhetische Note zu verleihen. Dies sind einige Bilder in Erwartung der Fertigstellung des Workshops unter der Leitung des Vereins Amal Ait Sadden für nachhaltige Entwicklung zusammen mit der Gemeinde Ras Tabouda. Dank und Anerkennung an den Rat für sein aktives Engagement in diesem Workshop.",
     fr: "Poursuite du travail de terrain du programme Awrach dans la commune de Ras Tabouda pour réhabiliter le terrain de football et donner une nouvelle esthétique au centre de Ras Tabouda. Voici quelques photos en attendant l'achèvement du chantier dirigé par l'Association Amal Ait Sadden pour le développement durable ainsi que la commune de Ras Tabouda. Remerciements et appréciation au conseil pour son engagement actif dans ce chantier.",
     en: "The fieldwork of the Awrach program in the Ras Tabouda commune continues to rehabilitate the football field and give new aesthetics to the Ras Tabouda center. These are some pictures awaiting the completion of the workshop led by the Amal Ait Sadden Association for Sustainable Development along with the Ras Tabouda commune. Thanks and appreciation to the council for its active involvement in this workshop."
+  },
+  "تنزيلا لبرنامجها التنموي لجميعة آمال ايت سادن للتنمية المستدامة بشراكة مع جمعية خبراء متطوعون من اجل التنمية و جمعية جيبر و جمعية النور أيت جابر وبتنسيق مع جماعة رأس تبودة نظمت اليوم رحلة استكشافية لكل من عين السخونات وعين الوالي التابعة لجماعة اغبالو اقورار و كان هدف هذه الرحلة هو الوقوف على المسار الرابط بين هذه المنابع الغنية بالمياه الصالحة للشرب وبطبيعتها الخلابة من اجل خلق منتجعات في هذه المناطق لتشجيع السياحة الداخلية و المحلية": {
+    de: "Im Rahmen ihres Entwicklungsprogramms organisierte der Verein Amal Ait Sadden für nachhaltige Entwicklung in Zusammenarbeit mit dem Verein der freiwilligen Experten für Entwicklung, dem Jaber-Verein und dem Nour Ait Jaber-Verein und in Koordination mit der Gemeinde Ras Tabouda heute eine Erkundungsreise zu den Quellen Ain Sakhounat und Ain Al Wali, die zur Gemeinde Aghbalou Akourar gehören. Das Ziel dieser Reise war es, den Weg zwischen diesen an Trinkwasser reichen Quellen mit ihrer atemberaubenden Natur zu erkunden, um in diesen Gebieten Resorts zu schaffen und den inländischen und lokalen Tourismus zu fördern.",
+    fr: "Dans le cadre de son programme de développement, l'Association Amal Ait Sadden pour le développement durable, en partenariat avec l'Association des experts volontaires pour le développement, l'Association Jaber et l'Association Nour Ait Jaber, et en coordination avec la commune de Ras Tabouda, a organisé aujourd'hui un voyage d'exploration aux sources Ain Sakhounat et Ain Al Wali, qui appartiennent à la commune d'Aghbalou Akourar. L'objectif de ce voyage était d'explorer le chemin entre ces sources riches en eau potable avec leur nature époustouflante, afin de créer des centres touristiques dans ces zones et encourager le tourisme intérieur et local.",
+    en: "As part of its development program, the Amal Ait Sadden Association for Sustainable Development, in partnership with the Association of Volunteer Experts for Development, the Jaber Association, and the Nour Ait Jaber Association, and in coordination with the Ras Tabouda commune, organized today an exploratory trip to the Ain Sakhounat and Ain Al Wali springs, which belong to the Aghbalou Akourar commune. The aim of this trip was to explore the path between these drinking water-rich springs with their breathtaking nature, in order to create resorts in these areas and encourage domestic and local tourism."
   }
 };
 
@@ -177,7 +192,8 @@ const getTranslatedValue = (arabicValue: string, language: 'de' | 'fr' | 'en'): 
 // Process the events data to add translations and format for our component
 
 export const getProcessedEvents = (): ProcessedEvent[] => {
-  return eventsData.map((event: RealEvent, index: number) => {
+  // First map the events to include translations
+  const processedEvents = eventsData.map((event: RealEvent, index: number) => {
     // Extract year from the date
     const year = new Date(event.date).getFullYear();
     
@@ -210,4 +226,9 @@ export const getProcessedEvents = (): ProcessedEvent[] => {
       gallery: event.gallery
     };
   });
+  
+  // Then sort the events by date, most recent first
+  return processedEvents.sort((a, b) => 
+    new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
 };
