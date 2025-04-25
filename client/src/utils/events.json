@@ -1,5 +1,20 @@
 [
   {
+    "date": "2023-08-18",
+    "title": "مباراة كرة قدم",
+    "location": "رأس تبودة، صفرو",
+    "description": "بمناسبة عيد الشباب نظمت جمعية آمال آيت سادن للتنمية المستدامة مقابلة ودية بين شباب جماعة كندر سيدي خيار و شباب قبيلة ايت سادن تحت شعار \"الرياضة قاطرة للتنمية الجهوية\" يوم الجمعة 18 غشت 2023 بملعب كرة القدم بجماعة رأس تبودة.",
+    "main_photo_url": "/images/events/football2023august/main.png",
+    "gallery": [
+      "/images/events/football2023august/gallery1.png",
+      "/images/events/football2023august/gallery2.png",
+      "/images/events/football2023august/gallery3.png",
+      "/images/events/football2023august/gallery4.png",
+      "/images/events/football2023august/gallery5.png",
+      "/images/events/football2023august/gallery6.png"
+    ]
+  },
+  {
     "date": "2023-05-21",
     "title": "قافلة طبية متعددة الاختصاصات",
     "location": "دوار ايت كايس جماعة كندر سيدي خيار",

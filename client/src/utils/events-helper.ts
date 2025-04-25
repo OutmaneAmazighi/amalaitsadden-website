@@ -110,6 +110,11 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     fr: "Paniers alimentaires du Ramadan",
     en: "Ramadan Food Baskets"
   },
+  "مباراة كرة قدم": {
+    de: "Fußballspiel",
+    fr: "Match de football",
+    en: "Football Match"
+  },
   "مسابقة تجويد القرآن الكريم": {
     de: "Quran-Rezitationswettbewerb",
     fr: "Concours de récitation du Coran",
@@ -224,6 +229,11 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     de: "Der Verein Amal Ait Sadden für nachhaltige Entwicklung organisiert in Partnerschaft mit dem FEMSA-Verein und seinen anderen Partnern, der Provinzdelegation für Gesundheit in Sefrou, DHL und der Stiftung Sidi Abderrahman Al Oudghiri, am 11. März 2023 eine solidarische medizinische Karawane im Dorf Ait Ibrahim in der Gemeinde Sidi Youssef Ben Ahmed.",
     fr: "L'Association Amal Ait Sadden pour le développement durable organise, en partenariat avec l'association FEMSA et ses autres partenaires, la délégation provinciale de la santé de Sefrou, DHL et la Fondation Sidi Abderrahman Al Oudghiri, une caravane médicale solidaire le 11 mars 2023 au douar Ait Ibrahim, commune de Sidi Youssef Ben Ahmed.",
     en: "The Amal Ait Sadden Association for Sustainable Development, in partnership with the FEMSA association and its other partners, the Provincial Health Delegation of Sefrou, DHL, and the Sidi Abderrahman Al Oudghiri Foundation, is organizing a solidarity medical caravan on March 11, 2023, in the village of Ait Ibrahim in the commune of Sidi Youssef Ben Ahmed."
+  },
+  "بمناسبة عيد الشباب نظمت جمعية آمال آيت سادن للتنمية المستدامة مقابلة ودية بين شباب جماعة كندر سيدي خيار و شباب قبيلة ايت سادن تحت شعار \"الرياضة قاطرة للتنمية الجهوية\" يوم الجمعة 18 غشت 2023 بملعب كرة القدم بجماعة رأس تبودة.": {
+    de: "Anlässlich des Jugendtages organisierte der Verein Amal Ait Sadden für nachhaltige Entwicklung ein Freundschaftsspiel zwischen den Jugendlichen der Gemeinde Kandar Sidi Khiar und den Jugendlichen des Ait Sadden-Stammes unter dem Motto \"Sport als Lokomotive für regionale Entwicklung\" am Freitag, den 18. August 2023, auf dem Fußballplatz der Gemeinde Ras Tabouda.",
+    fr: "À l'occasion de la Fête de la Jeunesse, l'Association Amal Ait Sadden pour le développement durable a organisé un match amical entre les jeunes de la commune de Kandar Sidi Khiar et les jeunes de la tribu Ait Sadden sous le slogan \"Le sport comme locomotive du développement régional\" le vendredi 18 août 2023 au terrain de football de la commune de Ras Tabouda.",
+    en: "On the occasion of Youth Day, the Amal Ait Sadden Association for Sustainable Development organized a friendly match between the youth of Kandar Sidi Khiar commune and the youth of the Ait Sadden tribe under the slogan \"Sport as a locomotive for regional development\" on Friday, August 18, 2023, at the football field in Ras Tabouda commune."
   },
   "بتاريخ 21 ماي 2023 نظمت جمعية امال ايت سادن قافلة طبية متعددة الاختصاصات بدوار ايت كايس جماعة كندر سيدي خيار،بشراكة مع المندوبية الإقليمية للصحة والحماية الاجتماعية والعصبة المغربية لمحاربة داء السل وجمعية أفوس.واستفاد من هذه القافلة أزيد من 600 مستفيد. الشكر موصول للسيد المندوب الإقليمي للصحة بإقليم صفرو على مواكبته والسلطات المحلية التي حرصت على تنظيم وتأطير الساكنة،ولكل من حضر هذه المساهمة في هذه المبادرة الإنسانية والاجتماعية.": {
     de: "Am 21. Mai 2023 organisierte der Verein Amal Ait Sadden eine multi-spezialisierte medizinische Karawane im Dorf Ait Kais in der Gemeinde Kandar Sidi Khiar, in Partnerschaft mit der Provinzdelegation für Gesundheit und Sozialschutz, der Marokkanischen Liga zur Bekämpfung der Tuberkulose und dem Verein Afous. Mehr als 600 Menschen profitierten von dieser Karawane. Unser Dank gilt dem Provinzbeauftragten für Gesundheit in der Provinz Sefrou für seine Unterstützung und den lokalen Behörden, die für die Organisation und Betreuung der Einwohner gesorgt haben, sowie allen, die zu dieser humanitären und sozialen Initiative beigetragen haben.",
