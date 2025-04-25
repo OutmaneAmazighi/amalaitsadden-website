@@ -110,6 +110,11 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     fr: "Paniers alimentaires du Ramadan",
     en: "Ramadan Food Baskets"
   },
+  "قافلة تضامنية للحوز": {
+    de: "Humanitärer Hilfskonvoi nach Al Haouz",
+    fr: "Convoi d'aide humanitaire pour Al Haouz", 
+    en: "Humanitarian Aid Convoy to Al Haouz"
+  },
   "مباراة كرة قدم": {
     de: "Fußballspiel",
     fr: "Match de football",
@@ -195,6 +200,11 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     fr: "Douar Ait Kais, commune de Kandar Sidi Khiar",
     en: "Douar Ait Kais, Kandar Sidi Khiar commune"
   },
+  "باشوية أمزميز، الحوز": {
+    de: "Amizmiz, Al Haouz",
+    fr: "Amizmiz, Al Haouz",
+    en: "Amizmiz, Al Haouz"
+  },
   "رأس تبودة / بئر طم طم، صفرو": {
     de: "Ras Tabouda / Bir Tam Tam, Sefrou",
     fr: "Ras Tabouda / Bir Tam Tam, Sefrou",
@@ -229,6 +239,11 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     de: "Der Verein Amal Ait Sadden für nachhaltige Entwicklung organisiert in Partnerschaft mit dem FEMSA-Verein und seinen anderen Partnern, der Provinzdelegation für Gesundheit in Sefrou, DHL und der Stiftung Sidi Abderrahman Al Oudghiri, am 11. März 2023 eine solidarische medizinische Karawane im Dorf Ait Ibrahim in der Gemeinde Sidi Youssef Ben Ahmed.",
     fr: "L'Association Amal Ait Sadden pour le développement durable organise, en partenariat avec l'association FEMSA et ses autres partenaires, la délégation provinciale de la santé de Sefrou, DHL et la Fondation Sidi Abderrahman Al Oudghiri, une caravane médicale solidaire le 11 mars 2023 au douar Ait Ibrahim, commune de Sidi Youssef Ben Ahmed.",
     en: "The Amal Ait Sadden Association for Sustainable Development, in partnership with the FEMSA association and its other partners, the Provincial Health Delegation of Sefrou, DHL, and the Sidi Abderrahman Al Oudghiri Foundation, is organizing a solidarity medical caravan on March 11, 2023, in the village of Ait Ibrahim in the commune of Sidi Youssef Ben Ahmed."
+  },
+  "نتقدم بخالص الشكر والتقدير لكل من ساهم في القافلة التضامنية التي انطلقت من قبيلة أيت سادن الى الحوز وحطت الرحال بباشوية أمزميز الشكر الخالص لجمعية اسيف للتنمية المستدامة وجمعية التضامن بئر طم طم للتعاون والتعاونية السادنية و جمعية امال أيت أيت سادن على انخراطهم الفعال والفعلي في انجاح هذه القافلة التضامنية، كما نتقدم بخالص الشكر والامتنان ونرفع القبعة احتراما وتقديرا لأبناء قبيلة أيت سادن والجالية المقيمة بالخارج على مساهمتهم لانجاح هذه القافلة وأخيرا وليس أخيراً تحية وتقدير لجنود الخفاء.": {
+    de: "Wir danken herzlich allen, die zum humanitären Hilfskonvoi beigetragen haben, der vom Ait Sadden-Stamm nach Al Haouz aufbrach und in der Amizmiz-Gemeinde ankam. Besonderer Dank gilt dem Verein Asif für nachhaltige Entwicklung, dem Solidaritätsverein Bir Tam Tam, der Sadden-Kooperative und dem Verein Amal Ait Sadden für ihr aktives und effektives Engagement beim Erfolg dieses Solidaritätskonvois. Wir drücken auch unseren aufrichtigen Dank und unsere Anerkennung aus und ziehen den Hut vor den Mitgliedern des Ait Sadden-Stammes und der im Ausland lebenden Gemeinschaft für ihren Beitrag zum Erfolg dieses Konvois. Schließlich grüßen und würdigen wir die stillen Helfer im Hintergrund.",
+    fr: "Nous exprimons nos sincères remerciements et notre gratitude à tous ceux qui ont contribué au convoi humanitaire parti de la tribu d'Ait Sadden vers Al Haouz et arrivé à la commune d'Amizmiz. Sincères remerciements à l'Association Asif pour le développement durable, à l'Association de solidarité Bir Tam Tam, à la Coopérative Sadden et à l'Association Amal Ait Sadden pour leur engagement actif et effectif dans la réussite de ce convoi de solidarité. Nous exprimons également nos sincères remerciements et notre gratitude, et nous tirons notre chapeau avec respect et appréciation aux membres de la tribu d'Ait Sadden et à la communauté résidant à l'étranger pour leur contribution à la réussite de ce convoi. Enfin et surtout, saluons et apprécions les soldats de l'ombre.",
+    en: "We extend our sincere thanks and appreciation to everyone who contributed to the humanitarian convoy that set out from the Ait Sadden tribe to Al Haouz and arrived at the Amizmiz commune. Sincere thanks to the Asif Association for Sustainable Development, the Bir Tam Tam Solidarity Association, the Sadden Cooperative, and the Amal Ait Sadden Association for their active and effective involvement in the success of this solidarity convoy. We also express our sincere thanks and gratitude, and we tip our hats with respect and appreciation to the members of the Ait Sadden tribe and the community residing abroad for their contribution to the success of this convoy. Last but not least, salute and appreciation to the behind-the-scenes workers."
   },
   "بمناسبة عيد الشباب نظمت جمعية آمال آيت سادن للتنمية المستدامة مقابلة ودية بين شباب جماعة كندر سيدي خيار و شباب قبيلة ايت سادن تحت شعار \"الرياضة قاطرة للتنمية الجهوية\" يوم الجمعة 18 غشت 2023 بملعب كرة القدم بجماعة رأس تبودة.": {
     de: "Anlässlich des Jugendtages organisierte der Verein Amal Ait Sadden für nachhaltige Entwicklung ein Freundschaftsspiel zwischen den Jugendlichen der Gemeinde Kandar Sidi Khiar und den Jugendlichen des Ait Sadden-Stammes unter dem Motto \"Sport als Lokomotive für regionale Entwicklung\" am Freitag, den 18. August 2023, auf dem Fußballplatz der Gemeinde Ras Tabouda.",
