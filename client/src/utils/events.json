@@ -12,6 +12,19 @@
     ]
   },
   {
+    "date": "2020-09-07",
+    "title": "حملة توعوية ضد مخاطر كوفيد-19",
+    "location": "رأس تبودة، صفرو",
+    "description": "نظمت جمعية آمال آيت سادن للتنمية المستدامة يومه الإثنين 07 شتنبر 2020 نشاط تحسيسي توعوي ضد مخاطر كوفيد 19 . بالتنسيق مع الهلال الأخضر و جماعة رأس تبودة و بحضور السلطات المحلية ممثلة في السيد قائد رأس تبودة . حيت تم توزيع الكمامات على المواطنين من داخل السوق الأسبوعي و المقاهي و الثانوية التأهيلية طارق بن زياد و توعيتهم بمخاطر كورونا و الإجراءات الازم اتخادها لتفادي الإصابة و انتشار الفيروس .",
+    "main_photo_url": "/images/events/covid2020/main.png",
+    "gallery": [
+      "/images/events/covid2020/gallery1.png",
+      "/images/events/covid2020/gallery2.png",
+      "/images/events/covid2020/gallery3.png",
+      "/images/events/covid2020/gallery4.png"
+    ]
+  },
+  {
     "date": "2023-05-21",
     "title": "قافلة طبية متعددة التخصصات",
     "location": "دوار أيت كايس، كندر سيدي خيار",
@@ -43,18 +56,6 @@
     "gallery": [
       "/images/activities/gallery/tree2.jpg",
       "/images/activities/gallery/tree3.jpg"
-    ]
-  },
-  {
-    "date": "2020-09-07",
-    "title": "حملة توعوية ضد مخاطر كوفيد-19",
-    "location": "رأس تبودة، سوق أسبوعي",
-    "description": "نشاط تحسيسي بالتنسيق مع الهلال الأخضر لتوعية السكان حول الوقاية من فيروس كورونا وتوزيع الكمامات.",
-    "main_photo_url": "/images/activities/agriculture.jpg",
-    "gallery": [
-      "/images/activities/gallery/agri1.jpg",
-      "/images/activities/gallery/agri2.jpg",
-      "/images/activities/gallery/agri3.jpg"
     ]
   }
 ]

@@ -120,6 +120,11 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     fr: "Ras Tabouda, marché hebdomadaire",
     en: "Ras Tabouda, weekly market"
   },
+  "رأس تبودة، صفرو": {
+    de: "Ras Tabouda, Sefrou",
+    fr: "Ras Tabouda, Sefrou",
+    en: "Ras Tabouda, Sefrou"
+  },
   "ثانوية طارق بن زياد، راس تابودة، صفرو": {
     de: "Tarik Ibn Ziad Gymnasium, Ras Tabouda, Sefrou",
     fr: "Lycée Tarik Ibn Ziad, Ras Tabouda, Sefrou",
@@ -129,6 +134,11 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     de: "Angesichts der außergewöhnlichen Umstände der Abiturprüfungen in diesem Jahr haben die Mitglieder des Vereins Amal Ait Sadden für nachhaltige Entwicklung eine Motivationsinitiative für die Schüler der Tarik Ibn Ziad Schule gestartet, indem sie Wasserflaschen, Joghurt und Kekse verteilten. Der Verein plant auch, alle Schuleinrichtungen zu desinfizieren.",
     fr: "En raison des circonstances exceptionnelles des examens du baccalauréat cette année, les membres de l'Association Amal Ait Sadden pour le développement durable ont lancé une initiative motivante pour les élèves du lycée Tarik Ibn Ziad en distribuant des bouteilles d'eau, des yaourts et des biscuits. L'association prévoit également de désinfecter toutes les installations de l'établissement.",
     en: "Due to the exceptional circumstances of the baccalaureate exams this year, members of the Amal Ait Sadden Association for Sustainable Development launched a motivational initiative for students of Tarik Ibn Ziad High School by distributing bottles of water, yogurt, and biscuits. The association also plans to disinfect all school facilities."
+  },
+  "نظمت جمعية آمال آيت سادن للتنمية المستدامة يومه الإثنين 07 شتنبر 2020 نشاط تحسيسي توعوي ضد مخاطر كوفيد 19 . بالتنسيق مع الهلال الأخضر و جماعة رأس تبودة و بحضور السلطات المحلية ممثلة في السيد قائد رأس تبودة . حيت تم توزيع الكمامات على المواطنين من داخل السوق الأسبوعي و المقاهي و الثانوية التأهيلية طارق بن زياد و توعيتهم بمخاطر كورونا و الإجراءات الازم اتخادها لتفادي الإصابة و انتشار الفيروس .": {
+    de: "Am Montag, den 7. September 2020, organisierte der Verein Amal Ait Sadden für nachhaltige Entwicklung eine Sensibilisierungsaktion zu den Risiken von COVID-19. Die Aktion wurde in Zusammenarbeit mit dem Grünen Halbmond und der Gemeinde Ras Tabouda und in Anwesenheit der lokalen Behörden, vertreten durch den Leiter von Ras Tabouda, durchgeführt. Es wurden Masken an die Bürger auf dem Wochenmarkt, in Cafés und in der Tarik Ibn Ziad Oberschule verteilt, und sie wurden über die Risiken von Corona und die notwendigen Maßnahmen zur Vermeidung von Infektionen und der Ausbreitung des Virus aufgeklärt.",
+    fr: "Le lundi 7 septembre 2020, l'Association Amal Ait Sadden pour le développement durable a organisé une activité de sensibilisation contre les risques de COVID-19. L'activité a été coordonnée avec le Croissant Vert et la commune de Ras Tabouda, et en présence des autorités locales représentées par le Caïd de Ras Tabouda. Des masques ont été distribués aux citoyens dans le marché hebdomadaire, les cafés et le lycée Tarik Ibn Ziad, et ils ont été sensibilisés aux risques du coronavirus et aux mesures nécessaires à prendre pour éviter l'infection et la propagation du virus.",
+    en: "On Monday, September 7, 2020, the Amal Ait Sadden Association for Sustainable Development organized an awareness activity against the risks of COVID-19. The activity was coordinated with the Green Crescent and the Ras Tabouda commune, and in the presence of local authorities represented by the Caid of Ras Tabouda. Masks were distributed to citizens in the weekly market, cafes, and Tarik Ibn Ziad High School, and they were educated about the risks of coronavirus and the necessary measures to take to avoid infection and virus spread."
   }
 };
 
