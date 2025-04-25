@@ -1,5 +1,6 @@
 import eventsData from '../data/events.json';
-import { format, parseISO, Locale } from 'date-fns';
+import { format, parseISO } from 'date-fns';
+import type { Locale } from 'date-fns';
 import { de, fr, enUS, ar } from 'date-fns/locale';
 
 // Define the Event interface from JSON structure
