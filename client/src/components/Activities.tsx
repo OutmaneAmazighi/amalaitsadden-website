@@ -70,12 +70,12 @@ const Activities: React.FC<ActivitiesProps> = ({ openLightbox }) => {
                     />
                   </div>
                   <div className="md:w-1/2">
-                    <div className="flex justify-between items-center mb-4">
-                      <div className="bg-primary-green text-white px-4 py-1 rounded-full text-sm">
+                    <div className={`flex justify-between items-center mb-4 ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
+                      <div className={`bg-primary-green text-white px-4 py-1 rounded-full text-sm ${language === 'ar' ? 'font-amiri' : ''}`}>
                         {formatDate(event.date, language)}
                       </div>
-                      <div className="text-gray-500">
-                        <i className="fas fa-map-marker-alt mr-1"></i> {event.location[language]}
+                      <div className={`text-gray-500 ${language === 'ar' ? 'font-amiri' : ''}`}>
+                        <i className={`fas fa-map-marker-alt ${language === 'ar' ? 'ml-1' : 'mr-1'}`}></i> {event.location[language]}
                       </div>
                     </div>
                     
@@ -88,13 +88,13 @@ const Activities: React.FC<ActivitiesProps> = ({ openLightbox }) => {
                     </p>
                     
                     <button 
-                      className="bg-primary-yellow hover:bg-primary-dark-yellow text-white py-2 px-4 rounded-md flex items-center"
+                      className={`bg-primary-yellow hover:bg-primary-dark-yellow text-white py-2 px-4 rounded-md flex items-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}
                       onClick={() => toggleGallery(event.id)}
                     >
                       <span className={language === 'ar' ? 'font-amiri' : ''}>
                         {translations[language].sections.activities.viewMorePhotos}
                       </span>
-                      <i className={`fas fa-chevron-${expandedGalleries[event.id] ? 'up' : 'down'} ml-2`}></i>
+                      <i className={`fas fa-chevron-${expandedGalleries[event.id] ? 'up' : 'down'} ${language === 'ar' ? 'mr-2' : 'ml-2'}`}></i>
                     </button>
                   </div>
                 </div>

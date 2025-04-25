@@ -297,6 +297,18 @@ export const formatDate = (dateString: string, localeString: string) => {
     ar: ar
   };
   
+  // For Arabic, use a custom format that properly respects RTL
+  if (localeString === 'ar') {
+    // Get the day, month and year separately
+    const day = format(date, 'd', { locale: ar });
+    const month = format(date, 'MMMM', { locale: ar });
+    const year = format(date, 'yyyy', { locale: ar });
+    
+    // Combine in RTL-friendly format
+    return `${day} ${month} ${year}`;
+  }
+  
+  // For other languages, use the standard format
   return format(date, 'PPP', { locale: localeMap[localeString] });
 };
 
