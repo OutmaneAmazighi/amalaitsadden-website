@@ -61,12 +61,12 @@
   {
     "date": "2022-03-20",
     "title": "يوم المرأة السادنية والعمل الجمعوي",
-    "location": "رأس تبودة",
-    "description": "يوم تواصلي احتفاءً بالمرأة في آيت سادن وتكريم نساء متميزات في مجالات مختلفة.",
-    "main_photo_url": "/images/activities/tree-planting.jpg",
+    "location": "رأس تبودة، صفرو",
+    "description": "احتفاء باليوم العالمي للمرأة الذي يصادف 8  مارس من كل سنة،  واعترافا بالمجهودات الجبارة للمرأة، نظمت جمعية أمل ايت سادن للتنمية المستدامة بشراكة مع جمعية جيبر للتنمية القروية و البيئة و بتنسيق مع جماعة رأس تبودة ، يوما تواصليا  تحت عنون \"المرأة السادنية والعمل الجمعوي\". كما تم تكريم مجموعة من النساء المتميزات في المجال  العمل الجمعوي، الرياضي والتعليمي",
+    "main_photo_url": "/images/events/womensday2022/main.png",
     "gallery": [
-      "/images/activities/gallery/tree2.jpg",
-      "/images/activities/gallery/tree3.jpg"
+      "/images/events/womensday2022/gallery1.png",
+      "/images/events/womensday2022/gallery2.png"
     ]
   }
 ]
