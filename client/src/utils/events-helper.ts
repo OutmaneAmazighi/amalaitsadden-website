@@ -110,6 +110,11 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     fr: "Paniers alimentaires du Ramadan",
     en: "Ramadan Food Baskets"
   },
+  "قافلة طبية متعددة الاختصاصات 2024": {
+    de: "Multidisziplinäre medizinische Karawane 2024",
+    fr: "Caravane médicale multidisciplinaire 2024", 
+    en: "Multidisciplinary Medical Caravan 2024"
+  },
   "قافلة تضامنية للحوز": {
     de: "Humanitärer Hilfskonvoi nach Al Haouz",
     fr: "Convoi d'aide humanitaire pour Al Haouz", 
@@ -195,6 +200,11 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     fr: "Douar Ait Ibrahim, Sidi Youssef Ben Ahmed",
     en: "Douar Ait Ibrahim, Sidi Youssef Ben Ahmed"
   },
+  "دواوير كندر، جماعة كندر سيدي خيار": {
+    de: "Douars von Kandar, Gemeinde Kandar Sidi Khiar",
+    fr: "Douars de Kandar, commune de Kandar Sidi Khiar",
+    en: "Douars of Kandar, Kandar Sidi Khiar commune"
+  },
   "دوار ايت كايس جماعة كندر سيدي خيار": {
     de: "Douar Ait Kais, Gemeinde Kandar Sidi Khiar",
     fr: "Douar Ait Kais, commune de Kandar Sidi Khiar",
@@ -209,6 +219,11 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     de: "Ras Tabouda / Bir Tam Tam, Sefrou",
     fr: "Ras Tabouda / Bir Tam Tam, Sefrou",
     en: "Ras Tabouda / Bir Tam Tam, Sefrou"
+  },
+  "نظمت جمعية آمال آيت سادن للتنمية المستدامة يوم 20 يناير قافلة طبية متعددة الاختصاصات بجماعة كندر سيدي خيار بدواوير كندر بشراكة مع المندوبية الإقليمية للصحة وجمعية FEMSA و جمعية النور للتنمية البشرية. الشكر موصول لكل من ساهم في إنجاح هذا العمل الإنساني.": {
+    de: "Am 20. Januar organisierte der Verein Amal Ait Sadden für nachhaltige Entwicklung eine multidisziplinäre medizinische Karawane in der Gemeinde Kandar Sidi Khiar in den Douars von Kandar in Zusammenarbeit mit der Provinzdelegation für Gesundheit, dem FEMSA-Verein und dem Al Noor-Verein für menschliche Entwicklung. Wir danken allen, die zum Erfolg dieser humanitären Arbeit beigetragen haben.",
+    fr: "L'Association Amal Ait Sadden pour le développement durable a organisé le 20 janvier une caravane médicale multidisciplinaire dans la commune de Kandar Sidi Khiar dans les douars de Kandar en partenariat avec la Délégation Provinciale de la Santé, l'association FEMSA et l'Association Al Noor pour le développement humain. Nous remercions tous ceux qui ont contribué au succès de ce travail humanitaire.",
+    en: "On January 20, the Amal Ait Sadden Association for Sustainable Development organized a multidisciplinary medical caravan in the Kandar Sidi Khiar commune in the douars of Kandar in partnership with the Provincial Health Delegation, FEMSA association, and Al Noor Association for Human Development. We thank everyone who contributed to the success of this humanitarian work."
   },
   "نظرا للظروف الاسثنائية التي تمر فيها امتحانات الباكالوريا هذه السنة قام أعضاء جمعية أمال آيت سادن للتنمية المستدامة بمبادرة تحفيزية لفائدة تلاميذ ثانوية طارق بن زياد و ذالك بتوزيع قنينة ماء و ياغورت و بسكويت كما تعتزم الجمعية القيام بعملية تعقيم لكل مرافق المؤسسة.": {
     de: "Angesichts der außergewöhnlichen Umstände der Abiturprüfungen in diesem Jahr haben die Mitglieder des Vereins Amal Ait Sadden für nachhaltige Entwicklung eine Motivationsinitiative für die Schüler der Tarik Ibn Ziad Schule gestartet, indem sie Wasserflaschen, Joghurt und Kekse verteilten. Der Verein plant auch, alle Schuleinrichtungen zu desinfizieren.",
