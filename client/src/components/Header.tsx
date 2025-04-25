@@ -26,10 +26,10 @@ const Header: React.FC<HeaderProps> = ({ toggleMobileMenu }) => {
             <div className="language-selector mb-4 md:mb-0 md:mr-6">
               <div className="flex space-x-2">
                 <button 
-                  className={`lang-btn p-1 rounded hover:bg-gray-100 ${language === 'de' ? 'ring-2 ring-primary-green' : ''}`} 
-                  onClick={() => setLanguage('de')}
+                  className={`lang-btn p-1 rounded hover:bg-gray-100 ${language === 'ar' ? 'ring-2 ring-primary-green' : ''}`}
+                  onClick={() => setLanguage('ar')}
                 >
-                  <img src="/images/flags/de.svg" alt="German" className="w-6 h-6" />
+                  <img src="/images/flags/ma.svg" alt="Arabic" className="w-6 h-6" />
                 </button>
                 <button 
                   className={`lang-btn p-1 rounded hover:bg-gray-100 ${language === 'fr' ? 'ring-2 ring-primary-green' : ''}`}
@@ -38,10 +38,10 @@ const Header: React.FC<HeaderProps> = ({ toggleMobileMenu }) => {
                   <img src="/images/flags/fr.svg" alt="French" className="w-6 h-6" />
                 </button>
                 <button 
-                  className={`lang-btn p-1 rounded hover:bg-gray-100 ${language === 'ar' ? 'ring-2 ring-primary-green' : ''}`}
-                  onClick={() => setLanguage('ar')}
+                  className={`lang-btn p-1 rounded hover:bg-gray-100 ${language === 'de' ? 'ring-2 ring-primary-green' : ''}`} 
+                  onClick={() => setLanguage('de')}
                 >
-                  <img src="/images/flags/ma.svg" alt="Arabic" className="w-6 h-6" />
+                  <img src="/images/flags/de.svg" alt="German" className="w-6 h-6" />
                 </button>
                 <button 
                   className={`lang-btn p-1 rounded hover:bg-gray-100 ${language === 'en' ? 'ring-2 ring-primary-green' : ''}`}

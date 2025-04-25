@@ -91,14 +91,14 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     en: "Maintenance Works"
   },
   "قافلة طبية متعددة الإختصاصات": {
-    de: "Medizinische Karawane mit mehreren Fachrichtungen",
-    fr: "Caravane médicale multi-spécialités",
+    de: "Multidisziplinäre medizinische Karawane",
+    fr: "Caravane médicale multidisciplinaire",
     en: "Multidisciplinary Medical Caravan"
   },
   "قافلة طبية متعددة الاختصاصات": {
-    de: "Multi-Fachärztliche medizinische Karawane",
-    fr: "Caravane médicale multi-spécialités",
-    en: "Multi-specialty Medical Caravan"
+    de: "Multidisziplinäre medizinische Karawane",
+    fr: "Caravane médicale multidisciplinaire",
+    en: "Multidisciplinary Medical Caravan"
   },
   "قافلة طبية تضامنية": {
     de: "Solidarische medizinische Karawane",
@@ -190,7 +190,7 @@ const translations: Record<string, { de: string; fr: string; en: string }> = {
     fr: "Hôpital Ras Tabouda, Sefrou",
     en: "Ras Tabouda Hospital, Sefrou"
   },
-  "ثانوية طارق بن زياد، راس تابودة، صفرو": {
+  "ثانوية طارق بن زياد، رأس تبودة، صفرو": {
     de: "Tarik Ibn Ziad Gymnasium, Ras Tabouda, Sefrou",
     fr: "Lycée Tarik Ibn Ziad, Ras Tabouda, Sefrou",
     en: "Tarik Ibn Ziad High School, Ras Tabouda, Sefrou"
