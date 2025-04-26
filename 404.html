@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Association Amal Ait Sadden</title>
+  <script>
+    // Capture the path and query params from the current URL
+    const path = window.location.pathname.slice(1);
+    const query = window.location.search.slice(1);
+    
+    // Redirect to the index.html with these params
+    window.location.href = 
+      window.location.origin + 
+      window.location.pathname.split('/').slice(0, -1).join('/') + 
+      '/' +
+      '?' + 
+      (path ? 'p=' + path + '&' : '') + 
+      query;
+  </script>
+</head>
+<body>
+  <p>Redirecting to homepage...</p>
+</body>
+</html>

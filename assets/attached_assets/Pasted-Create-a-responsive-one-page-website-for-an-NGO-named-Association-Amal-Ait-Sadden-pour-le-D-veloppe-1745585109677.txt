@@ -1,0 +1,77 @@
+Create a responsive one-page website for an NGO named "Association Amal Ait Sadden pour le Développement Durable".
+
+💡 Key Requirements:
+Languages: Arabic, French, German, English (simple language switcher in header)
+
+Design: Clean, minimal, modern look that subtly reflects Amazigh culture (through colors, patterns, or typography)
+
+Color Theme: Base the website’s main colors on the provided logo (placeholder colors for now; real logo will be uploaded later)
+
+Structure: One single scrollable page with anchor navigation
+
+📌 Sections:
+Header
+
+NGO name + logo
+
+Simple language selector (ar/fr/de/en)
+
+Über uns
+
+Short intro text about the association (placeholder, multilanguage-ready)
+
+Aktivitäten (Merged with Galerie)
+
+A vertical scrollable section showing each activity in reverse chronological order
+
+Each activity should include:
+
+Year
+
+Name of activity
+
+Location
+
+One main photo
+
+Short text description
+
+And below that: a collapsible gallery or lightbox that shows additional photos for that activity when expanded
+
+💭 Merging "Galerie" and "Aktivitäten" is an intentional design choice. Instead of having two separate sections, each activity includes a visual gallery of that event, all embedded in one structured flow.
+
+Team
+
+Show members in a card layout with:
+
+Photo
+
+Name
+
+Role
+
+Footer
+
+Contact placeholders (email, location, etc.)
+
+Note: “Website developed by Othman Hassani”
+
+🔧 Technical Specs:
+Use vanilla HTML, CSS, JS (optionally TailwindCSS for faster design, if preferred)
+
+Mobile and desktop responsive layout
+
+One-page smooth scrolling with anchor links (e.g., clicking "Team" scrolls down to that section)
+
+Use placeholder text and images for now
+
+Code should be modular and well structured (e.g., index.html, style.css, script.js)
+
+🧩 Optional Enhancements:
+Scroll-triggered animations (e.g., fade-in effects as activities appear)
+
+Lightbox functionality for photo previews
+
+Responsive grid or slider for the team section
+
+🚀 All visual and content placeholders will be updated later with real content, logo, and photos.
