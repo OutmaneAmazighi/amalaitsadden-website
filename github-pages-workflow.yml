@@ -27,10 +27,7 @@ jobs:
           ls -la
           echo "Client directory content:"
           ls -la client || echo "No client directory found"
-
-      - name: Create build directory
-        run: mkdir -p build
-        
+          
       - name: Create 404.html for SPA routing
         run: |
           mkdir -p static-assets
@@ -61,16 +58,22 @@ jobs:
           </html>
           EOL
 
-      - name: Set up Tailwind CSS
+      # Modified build approach to ensure the React app is built correctly
+      - name: Build React App for GitHub Pages
         run: |
-          if [ ! -f "client/vite.config.gh.js" ]; then
-            echo "Creating a GitHub Pages specific Vite config in client directory..."
-            cat > client/vite.config.gh.js << 'EOL'
+          # Create a temporary directory for the build
+          mkdir -p gh-pages-build
+          
+          # We will not overwrite the existing index.html since it has important resources
+          # Instead, we'll make a backup of it to ensure it's not modified during build
+          cp client/index.html client/index.html.bak
+          
+          # Create a simplified Vite config in the client directory
+          cat > client/vite.config.js << 'EOL'
           import { defineConfig } from "vite";
           import react from "@vitejs/plugin-react";
           import path from "path";
-
-          // GitHub Pages specific configuration - simplified for build process
+          
           export default defineConfig({
             plugins: [react()],
             resolve: {
@@ -81,46 +84,47 @@ jobs:
               },
             },
             build: {
-              outDir: path.resolve(__dirname, "../build"),
+              outDir: path.resolve(__dirname, "../gh-pages-build"),
               emptyOutDir: true,
-              sourcemap: false,
-              minify: true,
             },
             base: './',
           });
           EOL
-          else
-            echo "Using existing client/vite.config.gh.js"
+          
+          # Build the React app directly from the client directory
+          cd client
+          echo "Building React app with Vite..."
+          npx vite build --config vite.config.js
+          cd ..
+          
+          # Verify the build was created properly
+          echo "Build output directory contents:"
+          ls -la gh-pages-build || echo "No gh-pages-build directory found"
+          
+          # Check if index.html exists in the build directory
+          if [ ! -f "gh-pages-build/index.html" ]; then
+            echo "ERROR: index.html not found in build output directory!"
+            exit 1
           fi
           
-      - name: Build the project
-        run: |
-          echo "Building the client-side React application..."
-          # Direct approach with Vite using our client-specific config
-          cd client && npx vite build --config vite.config.gh.js && cd ..
+          # Copy 404.html to the build directory
+          cp static-assets/404.html gh-pages-build/404.html
           
-          # Verify build directory
-          echo "Build directory content:"
-          ls -la build || echo "No build directory found"
+          # Add GitHub Pages SPA routing script to index.html
+          sed -i 's/<head>/<head>\n  <script>\n    \/\/ GitHub Pages SPA routing\n    (function() {\n      const query = window.location.search.substring(1);\n      const pairs = query.split("\\&").map(pair => pair.split("="));\n      const params = pairs.reduce((acc, pair) => {\n        if (pair[0]) acc[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || "");\n        return acc;\n      }, {});\n      \n      if (params.p) {\n        history.replaceState(null, null, params.p + (query.replace("p=" + params.p, "") ? "?" + query.replace("p=" + params.p + "\\&", "").replace("p=" + params.p, "") : ""));\n      }\n    })();\n  <\/script>/' gh-pages-build/index.html
           
-          # Copy 404.html to build directory
-          cp static-assets/404.html build/404.html || echo "Failed to copy 404.html"
-          
-          # Add SPA routing handler to index.html if it exists
-          if [ -f "build/index.html" ]; then
-            # Create a backup of index.html
-            cp build/index.html build/index.html.bak
-            
-            # Add the script using a temporary file
-            awk '/<head>/ { print $0; print "  <script>\n    // Handle GitHub Pages routing\n    (function() {\n      const query = window.location.search.substring(1);\n      const pairs = query.split(\"&\").map(pair => pair.split(\"=\"));\n      const params = pairs.reduce((acc, pair) => {\n        acc[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || \"\");\n        return acc;\n      }, {});\n      \n      if (params.p) {\n        history.replaceState(null, null, params.p + (query.replace(\"p=\" + params.p, \"\") ? \"?\" + query.replace(\"p=\" + params.p + \"&\", \"\").replace(\"p=\" + params.p, \"\") : \"\"));\n      }\n    })();\n  </script>"; next = 0 } { if (next == 0) print $0; next = 1 }' build/index.html.bak > build/index.html.tmp
-            mv build/index.html.tmp build/index.html
-          else
-            echo "Warning: build/index.html not found"
+          # Copy all assets from the attached_assets directory to the build
+          if [ -d "attached_assets" ]; then
+            mkdir -p gh-pages-build/assets/attached_assets
+            cp -r attached_assets/* gh-pages-build/assets/attached_assets/ || echo "Warning: Could not copy attached_assets"
           fi
+          
+          echo "Final build directory contents:"
+          ls -la gh-pages-build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages  # The branch the action should deploy to.
-          folder: build  # The folder the action should deploy.
+          folder: gh-pages-build  # The folder the action should deploy.
           clean: true  # Automatically remove deleted files from the deploy branch
