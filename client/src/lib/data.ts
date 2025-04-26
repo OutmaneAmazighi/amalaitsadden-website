@@ -76,6 +76,6 @@ export const teamMembers: TeamMember[] = [
       ar: "عضوة",
       en: "Member"
     },
-    photo: "/images/team/avatar5.png"
+    photo: "/images/team/avatar5.svg"
   }
 ];
