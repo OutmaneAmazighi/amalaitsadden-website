@@ -27,25 +27,25 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
             className={`lang-btn p-2 ${language === 'ar' ? 'ring-2 ring-primary-green' : ''}`}
             onClick={() => setLanguage('ar')}
           >
-            <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/ma.svg" alt="Arabic" className="w-8 h-8" />
+            <img src="/images/flags/ma.svg" alt="Arabic" className="w-8 h-8" />
           </button>
           <button 
             className={`lang-btn p-2 ${language === 'fr' ? 'ring-2 ring-primary-green' : ''}`}
             onClick={() => setLanguage('fr')}
           >
-            <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/fr.svg" alt="French" className="w-8 h-8" />
+            <img src="/images/flags/fr.svg" alt="French" className="w-8 h-8" />
           </button>
           <button 
             className={`lang-btn p-2 ${language === 'de' ? 'ring-2 ring-primary-green' : ''}`}
             onClick={() => setLanguage('de')}
           >
-            <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/de.svg" alt="German" className="w-8 h-8" />
+            <img src="/images/flags/de.svg" alt="German" className="w-8 h-8" />
           </button>
           <button 
             className={`lang-btn p-2 ${language === 'en' ? 'ring-2 ring-primary-green' : ''}`}
             onClick={() => setLanguage('en')}
           >
-            <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/gb.svg" alt="English" className="w-8 h-8" />
+            <img src="/images/flags/gb.svg" alt="English" className="w-8 h-8" />
           </button>
         </div>
       </div>

@@ -14,9 +14,9 @@ const Header: React.FC<HeaderProps> = ({ toggleMobileMenu }) => {
       <div className="container mx-auto px-4 py-2">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="flex items-center mb-4 md:mb-0">
-            <img src="/images/logo.jpg" alt="Association Amal Ait Sadden Logo" className="h-16 mr-3" />
+            <img src="/images/logo.jpg" alt="Association Amal Ait Sadden Logo" className="h-12 sm:h-16 mr-2 sm:mr-3" />
             <div>
-              <h1 className={`text-lg md:text-xl font-bold primary-green ${language === 'ar' ? 'font-amiri rtl' : ''}`}>
+              <h1 className={`text-sm sm:text-lg md:text-xl font-bold primary-green ${language === 'ar' ? 'font-amiri rtl' : ''}`}>
                 {translations[language].ngoName}
               </h1>
             </div>
