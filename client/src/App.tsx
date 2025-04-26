@@ -6,6 +6,7 @@ import Team from "./components/Team";
 import Footer from "./components/Footer";
 import MobileMenu from "./components/MobileMenu";
 import Lightbox from "./components/Lightbox";
+import LanguageSelector from "./components/LanguageSelector";
 import { LanguageProvider } from "./components/LanguageContext";
 
 function App() {
@@ -61,6 +62,7 @@ function App() {
     <LanguageProvider>
       <div className="font-sans text-gray-800 bg-white">
         <Header toggleMobileMenu={toggleMobileMenu} />
+        <LanguageSelector />
         <MobileMenu isOpen={mobileMenuOpen} onClose={closeMobileMenu} />
         
         <main className="pt-24">
