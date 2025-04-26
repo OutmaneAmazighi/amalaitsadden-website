@@ -36,7 +36,7 @@ export const teamMembers: TeamMember[] = [
       ar: "رئيس",
       en: "President"
     },
-    photo: "/images/team/avatar1.png"
+    photo: "/images/team/avatar1.svg"
   },
   {
     name: "Khalid El Jazouli",
@@ -46,7 +46,7 @@ export const teamMembers: TeamMember[] = [
       ar: "الكاتب العام",
       en: "General Secretary"
     },
-    photo: "/images/team/avatar2.png"
+    photo: "/images/team/avatar2.svg"
   },
   {
     name: "Outmane Hassani",
@@ -56,7 +56,7 @@ export const teamMembers: TeamMember[] = [
       ar: "عضو ومسؤول إعلامي",
       en: "Member and Media Officer"
     },
-    photo: "/images/team/avatar3.png"
+    photo: "/images/team/avatar3.svg"
   },
   {
     name: "Nazih Ghanou",
@@ -66,7 +66,7 @@ export const teamMembers: TeamMember[] = [
       ar: "عضو",
       en: "Member"
     },
-    photo: "/images/team/avatar4.png"
+    photo: "/images/team/avatar4.svg"
   },
   {
     name: "Soumiua Ahari",
