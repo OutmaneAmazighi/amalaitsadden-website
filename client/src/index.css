@@ -74,138 +74,136 @@ body {
   --ring: 240 4.9% 83.9%;
 }
 
-@layer base {
-  * {
-    border-color: #e5e7eb; /* Hardcoded gray-200 color instead of using the Tailwind class */
-  }
+/* Base styles - avoid using @layer for more compatibility */
+* {
+  border-color: #e5e7eb; /* Hardcoded gray-200 color instead of using the Tailwind class */
+}
 
-  body {
-    background-color: #fcfaf7;
-    color: #333;
-    font-family: 'Poppins', 'Cairo', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+body {
+  background-color: #fcfaf7;
+  color: #333;
+  font-family: 'Poppins', 'Cairo', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  html {
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
+}
+
+/* Component styles - avoiding @layer for better compatibility */
+.font-amiri {
+  font-family: 'Amiri', serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.primary-green {
+  color: #4CAF50;
+}
+
+.primary-dark-green {
+  color: #388E3C;
+}
+
+.primary-red {
+  color: #D32F2F;
+}
+
+.primary-dark-red {
+  color: #B71C1C;
+}
+
+.primary-yellow {
+  color: #FFC107;
+}
+
+.primary-dark-yellow {
+  color: #FFB300;
+}
+
+.bg-primary-green {
+  background-color: #4CAF50;
+}
+
+.bg-primary-dark-green {
+  background-color: #388E3C;
+}
+
+.bg-primary-red {
+  background-color: #D32F2F;
+}
+
+.bg-primary-dark-red {
+  background-color: #B71C1C;
+}
+
+.bg-primary-yellow {
+  background-color: #FFC107;
+}
+
+.bg-primary-dark-yellow {
+  background-color: #FFB300;
+}
+
+.hover\:bg-primary-dark-green:hover {
+  background-color: #388E3C;
+}
+
+.hover\:bg-primary-dark-red:hover {
+  background-color: #B71C1C;
+}
+
+.hover\:bg-primary-dark-yellow:hover {
+  background-color: #FFB300;
+}
+
+.hover\:text-primary-green:hover {
+  color: #4CAF50;
+}
+
+.hover\:text-primary-yellow:hover {
+  color: #FFC107;
+}
+
+.activity-img-container {
+  height: 300px;
+}
+
+.activity-img-container img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.team-card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@layer components {
-  .font-amiri {
-    font-family: 'Amiri', serif;
-  }
-
-  .font-poppins {
-    font-family: 'Poppins', sans-serif;
-  }
-
-  .rtl {
-    direction: rtl;
-  }
-
-  .primary-green {
-    color: #4CAF50;
-  }
-
-  .primary-dark-green {
-    color: #388E3C;
-  }
-
-  .primary-red {
-    color: #D32F2F;
-  }
-
-  .primary-dark-red {
-    color: #B71C1C;
-  }
-
-  .primary-yellow {
-    color: #FFC107;
-  }
-
-  .primary-dark-yellow {
-    color: #FFB300;
-  }
-
-  .bg-primary-green {
-    background-color: #4CAF50;
-  }
-
-  .bg-primary-dark-green {
-    background-color: #388E3C;
-  }
-
-  .bg-primary-red {
-    background-color: #D32F2F;
-  }
-
-  .bg-primary-dark-red {
-    background-color: #B71C1C;
-  }
-
-  .bg-primary-yellow {
-    background-color: #FFC107;
-  }
-
-  .bg-primary-dark-yellow {
-    background-color: #FFB300;
-  }
-
-  .hover\:bg-primary-dark-green:hover {
-    background-color: #388E3C;
-  }
-
-  .hover\:bg-primary-dark-red:hover {
-    background-color: #B71C1C;
-  }
-
-  .hover\:bg-primary-dark-yellow:hover {
-    background-color: #FFB300;
-  }
-
-  .hover\:text-primary-green:hover {
-    color: #4CAF50;
-  }
-
-  .hover\:text-primary-yellow:hover {
-    color: #FFC107;
-  }
-
-  .activity-img-container {
-    height: 300px;
-  }
-
-  .activity-img-container img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-  }
-
-  .team-card img {
-    height: 250px;
-    object-fit: cover;
-  }
-
-  /* Animations */
-  .fade-in {
-    animation: fadeIn 0.8s ease-in-out;
-  }
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .gallery-container {
-    transition: max-height 0.5s ease-in-out;
-    overflow: hidden;
-  }
+.gallery-container {
+  transition: max-height 0.5s ease-in-out;
+  overflow: hidden;
 }
