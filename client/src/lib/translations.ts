@@ -100,7 +100,7 @@ export const translations: Translations = {
   },
   
   ar: {
-    ngoName: "جمعية آمال آيت سادن للتنمية المستدامة",
+    ngoName: "جمعية آمل آيت سادن للتنمية المستدامة",
     nav: {
       about: "من نحن",
       activities: "أنشطة",
