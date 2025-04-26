@@ -81,10 +81,10 @@ const Activities: React.FC<ActivitiesProps> = ({ openLightbox }) => {
                   </div>
                   <div className="md:w-1/2">
                     <div className={`flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 ${language === 'ar' ? 'items-end sm:flex-row-reverse' : 'items-start'}`}>
-                      <div className={`bg-primary-green text-white px-4 py-1 rounded-full text-sm mb-2 sm:mb-0 ${language === 'ar' ? 'font-amiri text-lg rtl' : ''}`}>
+                      <div className={`bg-primary-green text-white px-4 py-1 rounded-full text-sm mb-2 sm:mb-0 ${language === 'ar' ? 'font-amiri text-lg' : ''}`}>
                         {formatDate(event.date, language)}
                       </div>
-                      <div className={`text-gray-500 ${language === 'ar' ? 'font-amiri text-lg rtl' : ''}`}>
+                      <div className={`text-gray-500 ${language === 'ar' ? 'font-amiri text-lg' : ''}`}>
                         <i className={`fas fa-map-marker-alt ${language === 'ar' ? 'ml-1' : 'mr-1'}`}></i> {event.location[language]}
                       </div>
                     </div>
@@ -114,32 +114,34 @@ const Activities: React.FC<ActivitiesProps> = ({ openLightbox }) => {
                   className="gallery-container mt-6 overflow-hidden transition-all duration-500"
                   style={{ 
                     maxHeight: expandedGalleries[event.id] ? '2000px' : '0',
-                    opacity: expandedGalleries[event.id] ? '1' : '0'
+                    opacity: expandedGalleries[event.id] ? '1' : '0',
+                    visibility: expandedGalleries[event.id] ? 'visible' : 'hidden'
                   }}
                 >
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
-                    {event.gallery.map((image, i) => (
-                      <div 
-                        key={i} 
-                        className="relative aspect-[4/3] touch-manipulation"
-                        style={{ display: expandedGalleries[event.id] ? 'block' : 'none' }}
-                      >
-                        <img 
-                          src={image} 
-                          alt={`${event.title[language]} - Image ${i+1}`} 
-                          className="rounded-lg shadow w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity"
-                          onClick={() => openLightbox(image)}
-                        />
+                  {expandedGalleries[event.id] && (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+                      {event.gallery.map((image, i) => (
                         <div 
-                          className="absolute inset-0 bg-primary-dark-green bg-opacity-0 hover:bg-opacity-20 transition-opacity flex items-center justify-center cursor-pointer"
-                          onClick={() => openLightbox(image)}
+                          key={i} 
+                          className="relative aspect-[4/3] touch-manipulation"
                         >
-                          <i className="fas fa-search-plus text-white text-xl opacity-0 hover:opacity-100 transition-opacity"></i>
+                          <img 
+                            src={image} 
+                            alt={`${event.title[language]} - Image ${i+1}`} 
+                            className="rounded-lg shadow w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity"
+                            onClick={() => openLightbox(image)}
+                            loading="lazy"
+                          />
+                          <div 
+                            className="absolute inset-0 bg-primary-dark-green bg-opacity-0 hover:bg-opacity-20 transition-opacity flex items-center justify-center cursor-pointer"
+                            onClick={() => openLightbox(image)}
+                          >
+                            <i className="fas fa-search-plus text-white text-xl opacity-0 hover:opacity-100 transition-opacity"></i>
+                          </div>
                         </div>
-                      </div>
-                    ))}
-                  </div>
-                
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

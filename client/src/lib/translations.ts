@@ -63,7 +63,7 @@ export const translations: Translations = {
       location: "Ait Sadden, Marokko",
       followUs: "Folgen Sie uns",
       copyright: "© {year} Association Amal Ait Sadden. Alle Rechte vorbehalten.",
-      developedBy: "Website entwickelt von Outmane Hassani"
+      developedBy: "Website entwickelt von Othman Hassani"
     }
   },
   
@@ -95,7 +95,7 @@ export const translations: Translations = {
       location: "Ait Sadden, Maroc",
       followUs: "Suivez-nous",
       copyright: "© {year} Association Amal Ait Sadden. Tous droits réservés.",
-      developedBy: "Site web développé par Outmane Hassani"
+      developedBy: "Site web développé par Othman Hassani"
     }
   },
   
@@ -127,7 +127,7 @@ export const translations: Translations = {
       location: "آيت سادن، المغرب",
       followUs: "تابعونا",
       copyright: "© {year} جمعية آمل آيت سادن للتنمية المستدامة. جميع الحقوق محفوظة.",
-      developedBy: "تم تطوير الموقع بواسطة عتمان حساني"
+      developedBy: "تم تطوير الموقع بواسطة عثمان حساني"
     }
   },
   
@@ -159,7 +159,7 @@ export const translations: Translations = {
       location: "Ait Sadden, Morocco",
       followUs: "Follow Us",
       copyright: "© {year} Amal Ait Sadden Association for Sustainable Development. All rights reserved.",
-      developedBy: "Website developed by Outmane Hassani"
+      developedBy: "Website developed by Othman Hassani"
     }
   }
 };

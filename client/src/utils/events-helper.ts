@@ -299,9 +299,16 @@ export const formatDate = (dateString: string, localeString: string) => {
   
   // For Arabic, use a custom format with manually constructed text
   if (localeString === 'ar') {
-    // Use regular (Western) numerals as requested
-    const day = date.getDate().toString();
-    const year = date.getFullYear().toString();
+    // Convert western numerals to Arabic numerals
+    const toArabicNumerals = (num: number): string => {
+      const arabicNumerals = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
+      return num.toString().split('').map(digit => 
+        isNaN(parseInt(digit)) ? digit : arabicNumerals[parseInt(digit)]
+      ).join('');
+    };
+    
+    const day = toArabicNumerals(date.getDate());
+    const year = toArabicNumerals(date.getFullYear());
     
     // Arabic month names
     const arabicMonths = [
@@ -310,8 +317,8 @@ export const formatDate = (dateString: string, localeString: string) => {
     ];
     const month = arabicMonths[date.getMonth()];
     
-    // Return in RTL format: "2024 يناير 20" with regular numerals
-    return `${year} ${month} ${day}`;
+    // Return in format: "20 يناير 2024"
+    return `${day} ${month} ${year}`;
   }
   
   // For other languages, use the standard format
