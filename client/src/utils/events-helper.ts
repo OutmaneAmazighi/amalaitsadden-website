@@ -309,7 +309,7 @@ export const formatDate = (dateString: string, localeString: string) => {
     ];
     const month = arabicMonths[date.getMonth()];
     
-    // Return in format: "20 يناير 2024" with standard numerals
+    // Correct order for Arabic: day month year with standard numerals 
     return `${day} ${month} ${year}`;
   }
   

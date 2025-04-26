@@ -20,16 +20,6 @@ const Activities: React.FC<ActivitiesProps> = ({ openLightbox }) => {
       ...prev,
       [activityId]: !prev[activityId]
     }));
-    
-    // Scroll to the gallery if we're expanding it
-    if (!expandedGalleries[activityId]) {
-      setTimeout(() => {
-        const element = document.querySelector(`#gallery-${activityId}`);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }, 100);
-    }
   };
   
   useEffect(() => {
@@ -55,6 +45,21 @@ const Activities: React.FC<ActivitiesProps> = ({ openLightbox }) => {
       });
     };
   }, []);
+
+  // Pre-load all gallery images
+  useEffect(() => {
+    events.forEach(event => {
+      // Preload main image
+      const mainImg = new Image();
+      mainImg.src = event.mainImage;
+      
+      // Preload gallery images
+      event.gallery.forEach(imgSrc => {
+        const img = new Image();
+        img.src = imgSrc;
+      });
+    });
+  }, [events]);
   
   return (
     <section id="activities" className="py-16 bg-gray-50">
@@ -81,7 +86,10 @@ const Activities: React.FC<ActivitiesProps> = ({ openLightbox }) => {
                   </div>
                   <div className="md:w-1/2">
                     <div className={`flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 ${language === 'ar' ? 'items-end sm:flex-row-reverse' : 'items-start'}`}>
-                      <div className={`bg-primary-green text-white px-4 py-1 rounded-full text-sm mb-2 sm:mb-0 ${language === 'ar' ? 'font-amiri text-lg' : ''}`}>
+                      <div 
+                        className={`bg-primary-green text-white px-4 py-1 rounded-full text-sm mb-2 sm:mb-0 ${language === 'ar' ? 'font-amiri text-lg' : ''}`}
+                        dir={language === 'ar' ? 'rtl' : 'ltr'}
+                      >
                         {formatDate(event.date, language)}
                       </div>
                       <div className={`text-gray-500 ${language === 'ar' ? 'font-amiri text-lg' : ''}`}>
@@ -89,7 +97,7 @@ const Activities: React.FC<ActivitiesProps> = ({ openLightbox }) => {
                       </div>
                     </div>
                     
-                    <h3 className={`text-xl sm:text-xl font-semibold primary-dark-green mb-3 leading-relaxed ${language === 'ar' ? 'font-amiri rtl text-right' : ''}`}>
+                    <h3 className={`text-xl font-semibold primary-dark-green mb-3 leading-relaxed ${language === 'ar' ? 'font-amiri rtl text-right' : ''}`}>
                       {event.title[language]}
                     </h3>
                     
@@ -109,40 +117,28 @@ const Activities: React.FC<ActivitiesProps> = ({ openLightbox }) => {
                   </div>
                 </div>
                 
-                <div 
-                  id={`gallery-${event.id}`}
-                  className="gallery-container mt-6 overflow-hidden transition-all duration-500"
-                  style={{ 
-                    maxHeight: expandedGalleries[event.id] ? '2000px' : '0',
-                    opacity: expandedGalleries[event.id] ? '1' : '0',
-                    visibility: expandedGalleries[event.id] ? 'visible' : 'hidden'
-                  }}
-                >
-                  {expandedGalleries[event.id] && (
+                {expandedGalleries[event.id] && (
+                  <div className="gallery-container mt-6">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
                       {event.gallery.map((image, i) => (
                         <div 
                           key={i} 
                           className="relative aspect-[4/3] touch-manipulation"
+                          onClick={() => openLightbox(image)}
                         >
                           <img 
                             src={image} 
                             alt={`${event.title[language]} - Image ${i+1}`} 
                             className="rounded-lg shadow w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity"
-                            onClick={() => openLightbox(image)}
-                            loading="lazy"
                           />
-                          <div 
-                            className="absolute inset-0 bg-primary-dark-green bg-opacity-0 hover:bg-opacity-20 transition-opacity flex items-center justify-center cursor-pointer"
-                            onClick={() => openLightbox(image)}
-                          >
+                          <div className="absolute inset-0 bg-primary-dark-green bg-opacity-0 hover:bg-opacity-20 transition-opacity flex items-center justify-center cursor-pointer">
                             <i className="fas fa-search-plus text-white text-xl opacity-0 hover:opacity-100 transition-opacity"></i>
                           </div>
                         </div>
                       ))}
                     </div>
-                  )}
-                </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
