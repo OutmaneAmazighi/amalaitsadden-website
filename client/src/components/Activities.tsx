@@ -110,15 +110,17 @@ const Activities: React.FC<ActivitiesProps> = ({ openLightbox }) => {
                       {event.description[language]}
                     </p>
                     
-                    <button 
-                      className={`bg-primary-yellow hover:bg-primary-dark-yellow text-white py-3 sm:py-2 px-5 sm:px-4 rounded-md flex items-center justify-center w-full sm:w-auto ${language === 'ar' ? 'flex-row-reverse' : ''}`}
-                      onClick={() => toggleGallery(event.id)}
-                    >
-                      <span className={`${language === 'ar' ? 'font-amiri text-lg sm:text-base' : 'text-lg sm:text-base'}`}>
-                        {translations[language].sections.activities.viewMorePhotos}
-                      </span>
-                      <i className={`fas fa-chevron-${expandedGalleries[event.id] ? 'up' : 'down'} ${language === 'ar' ? 'mr-2' : 'ml-2'} text-lg sm:text-base`}></i>
-                    </button>
+                    {event.gallery.length > 1 && (
+                      <button 
+                        className={`bg-primary-yellow hover:bg-primary-dark-yellow text-white py-3 sm:py-2 px-5 sm:px-4 rounded-md flex items-center justify-center w-full sm:w-auto ${language === 'ar' ? 'flex-row-reverse' : ''}`}
+                        onClick={() => toggleGallery(event.id)}
+                      >
+                        <span className={`${language === 'ar' ? 'font-amiri text-lg sm:text-base' : 'text-lg sm:text-base'}`}>
+                          {translations[language].sections.activities.viewMorePhotos}
+                        </span>
+                        <i className={`fas fa-chevron-${expandedGalleries[event.id] ? 'up' : 'down'} ${language === 'ar' ? 'mr-2' : 'ml-2'} text-lg sm:text-base`}></i>
+                      </button>
+                    )}
                   </div>
                 </div>
                 

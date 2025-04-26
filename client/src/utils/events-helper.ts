@@ -359,8 +359,8 @@ export const getProcessedEvents = (): ProcessedEvent[] => {
         fr: getTranslatedValue(event.description, 'fr'),
         en: getTranslatedValue(event.description, 'en')
       },
-      mainImage: event.main_photo_url,
-      gallery: event.gallery.map(img => img)
+      mainImage: event.main_photo_url.replace(/^\/images/, '/images'),
+      gallery: event.gallery.map(img => img.replace(/^\/images/, '/images'))
     };
   });
   
