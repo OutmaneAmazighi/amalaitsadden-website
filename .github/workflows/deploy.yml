@@ -247,6 +247,24 @@ jobs:
             cp -r attached_assets/* gh-pages-build/assets/attached_assets/ || echo "Warning: Could not copy attached_assets"
           fi
           
+          # Create images directory structure for event images
+          echo "Creating images directory for events..."
+          mkdir -p gh-pages-build/images/events
+          mkdir -p gh-pages-build/images/events/medicalcaravan2024jan
+          mkdir -p gh-pages-build/images/events/aidconvoy2023
+          mkdir -p gh-pages-build/images/events/football2023august
+          mkdir -p gh-pages-build/images/events/medicalcaravan2023may
+          mkdir -p gh-pages-build/images/events/qurancompetition2023
+          mkdir -p gh-pages-build/images/events/ramadan2023
+          mkdir -p gh-pages-build/images/events/medicalcaravan2023
+          mkdir -p gh-pages-build/images/events/medicalcaravan2022
+          mkdir -p gh-pages-build/images/events/maintenance2022
+          mkdir -p gh-pages-build/images/events/exploration2022
+          mkdir -p gh-pages-build/images/events/awrach2022
+          mkdir -p gh-pages-build/images/events/bac2020
+          mkdir -p gh-pages-build/images/events/covid2020
+          mkdir -p gh-pages-build/images/events/womensday2022
+          
           echo "Final build directory contents:"
           ls -la gh-pages-build
 

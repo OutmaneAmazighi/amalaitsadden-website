@@ -225,6 +225,12 @@ if [ -d "attached_assets" ]; then
   cp -r attached_assets/* gh-pages-build/assets/attached_assets/ || echo "Warning: Could not copy attached_assets"
 fi
 
+# Create images directory for event images
+echo "Creating images directory structure for events..."
+mkdir -p gh-pages-build/images/events
+# You would need to copy actual event images here
+echo "Note: You may need to copy event images manually to the gh-pages-build/images/events directory."
+
 echo "GitHub Pages build complete!"
 echo "Build output is in the 'gh-pages-build' directory."
 echo ""

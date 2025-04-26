@@ -354,8 +354,9 @@ export const getProcessedEvents = (): ProcessedEvent[] => {
         fr: getTranslatedValue(event.description, 'fr'),
         en: getTranslatedValue(event.description, 'en')
       },
-      mainImage: event.main_photo_url,
-      gallery: event.gallery
+      // Prepend './' to paths to ensure they work on GitHub Pages
+      mainImage: event.main_photo_url.startsWith('./') ? event.main_photo_url : `.${event.main_photo_url}`,
+      gallery: event.gallery.map(path => path.startsWith('./') ? path : `.${path}`)
     };
   });
   
