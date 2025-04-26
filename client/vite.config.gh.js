@@ -1,10 +1,14 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
+import tailwind from "@tailwindcss/vite";
 
 // GitHub Pages specific configuration - simplified for build process
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    tailwind()
+  ],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, "src"),
@@ -13,7 +17,7 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: path.resolve(__dirname, "../build"),
+    outDir: path.resolve(__dirname, "../gh-pages-build"),
     emptyOutDir: true,
     sourcemap: false,
     minify: true,
