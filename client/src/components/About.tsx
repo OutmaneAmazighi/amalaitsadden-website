@@ -1,15 +1,13 @@
 import { useContext } from 'react';
 import { LanguageContext } from './LanguageContext';
 import { translations } from '../lib/translations';
-import { AmazighPattern } from '../lib/patterns';
+import { AmazighColorfulPattern } from '../lib/patterns';
 
 const About: React.FC = () => {
   const { language } = useContext(LanguageContext);
   
-  // Removed all the intersection observer and animation code that was causing the section to disappear
-  
   return (
-    <section id="about" className="py-12 sm:py-16" style={{ background: AmazighPattern }}>
+    <section id="about" className="py-12 sm:py-16" style={{ background: AmazighColorfulPattern }}>
       <div className="container mx-auto px-4">
         <div className="bg-white rounded-lg shadow-lg p-4 sm:p-8 max-w-4xl mx-auto">
           <h2 className={`text-2xl sm:text-3xl font-bold primary-green mb-4 sm:mb-6 text-center ${language === 'ar' ? 'font-amiri' : ''}`}>

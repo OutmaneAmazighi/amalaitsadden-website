@@ -2,6 +2,7 @@ import { useContext, useState, useRef, useEffect } from 'react';
 import { LanguageContext } from './LanguageContext';
 import { translations } from '../lib/translations';
 import { getProcessedEvents, formatDate, ProcessedEvent } from '../utils/events-helper';
+import { TifinaghYazPattern } from '../lib/patterns';
 
 interface ActivitiesProps {
   openLightbox: (imageSrc: string) => void;
@@ -47,7 +48,7 @@ const Activities: React.FC<ActivitiesProps> = ({ openLightbox }) => {
   }, []);
   
   return (
-    <section id="activities" className="py-12 sm:py-16 bg-gray-50">
+    <section id="activities" className="py-12 sm:py-16" style={{ background: TifinaghYazPattern }}>
       <div className="container mx-auto px-4">
         <h2 className={`text-2xl sm:text-3xl font-bold primary-green mb-6 sm:mb-10 text-center ${language === 'ar' ? 'font-amiri' : ''}`}>
           {translations[language].sections.activities.title}
