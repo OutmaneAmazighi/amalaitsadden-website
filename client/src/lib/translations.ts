@@ -100,7 +100,7 @@ export const translations: Translations = {
   },
   
   ar: {
-    ngoName: "جمعية آمل آيت سادن للتنمية المستدامة",
+    ngoName: "جمعية آمال آيت سادن للتنمية المستدامة",
     nav: {
       about: "من نحن",
       activities: "أنشطة",
@@ -110,7 +110,7 @@ export const translations: Translations = {
       about: {
         title: "من نحن",
         paragraphs: [
-          "جمعية آمل آيت سادن للتنمية المستدامة هي منظمة غير ربحية مكرسة للتنمية المستدامة وحماية البيئة في منطقة آيت سادن. نحن نعمل مع المجتمعات المحلية لتعزيز التعليم والوعي البيئي والفرص الاقتصادية.",
+          "جمعية آمال آيت سادن للتنمية المستدامة هي منظمة غير ربحية مكرسة للتنمية المستدامة وحماية البيئة في منطقة آيت سادن. نحن نعمل مع المجتمعات المحلية لتعزيز التعليم والوعي البيئي والفرص الاقتصادية.",
           "رؤيتنا هي خلق مستقبل مستدام للأجيال القادمة من خلال الحفاظ على التراث الثقافي الغني للمجتمع الأمازيغي مع تعزيز الممارسات المستدامة الحديثة."
         ]
       },
@@ -126,7 +126,7 @@ export const translations: Translations = {
       contact: "اتصل بنا",
       location: "آيت سادن، المغرب",
       followUs: "تابعونا",
-      copyright: "© {year} جمعية آمل آيت سادن للتنمية المستدامة. جميع الحقوق محفوظة.",
+      copyright: "© {year} جمعية آمال آيت سادن. جميع الحقوق محفوظة.",
       developedBy: "تم تطوير الموقع بواسطة عثمان حساني"
     }
   },
@@ -158,7 +158,7 @@ export const translations: Translations = {
       contact: "Contact",
       location: "Ait Sadden, Morocco",
       followUs: "Follow Us",
-      copyright: "© {year} Amal Ait Sadden Association for Sustainable Development. All rights reserved.",
+      copyright: "© {year} Amal Ait Sadden Association. All rights reserved.",
       developedBy: "Website developed by Othman Hassani"
     }
   }

@@ -297,19 +297,14 @@ export const formatDate = (dateString: string, localeString: string) => {
     ar: ar
   };
   
-  // For Arabic, use a custom format with manually constructed text
+  // For Arabic, use a custom format that properly respects RTL
   if (localeString === 'ar') {
-    const day = date.getDate().toString();
-    const year = date.getFullYear().toString();
+    // Get the day, month and year separately
+    const day = format(date, 'd', { locale: ar });
+    const month = format(date, 'MMMM', { locale: ar });
+    const year = format(date, 'yyyy', { locale: ar });
     
-    // Arabic month names
-    const arabicMonths = [
-      'يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو',
-      'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'
-    ];
-    const month = arabicMonths[date.getMonth()];
-    
-    // Correct order for Arabic: day month year with standard numerals 
+    // Combine in RTL-friendly format
     return `${day} ${month} ${year}`;
   }
   
@@ -359,8 +354,8 @@ export const getProcessedEvents = (): ProcessedEvent[] => {
         fr: getTranslatedValue(event.description, 'fr'),
         en: getTranslatedValue(event.description, 'en')
       },
-      mainImage: `http://localhost:5000${event.main_photo_url}`,
-      gallery: event.gallery.map(img => `http://localhost:5000${img}`)
+      mainImage: event.main_photo_url,
+      gallery: event.gallery
     };
   });
   

@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
             </div>
             <div className="flex items-center mb-3">
               <i className="fas fa-phone mr-3"></i>
-              <span>+212 621-783035</span>
+              <span>+212 5XX-XXXXXX</span>
             </div>
             <div className="flex items-center">
               <i className="fas fa-map-marker-alt mr-3"></i>
@@ -45,8 +45,14 @@ const Footer: React.FC = () => {
             </h3>
             
             <div className="flex space-x-4">
-              <a href="https://web.facebook.com/profile.php?id=100069741199883" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary-yellow transition-colors" aria-label="Facebook">
+              <a href="#" className="text-white hover:text-primary-yellow transition-colors" aria-label="Facebook">
                 <i className="fab fa-facebook-f text-2xl"></i>
+              </a>
+              <a href="#" className="text-white hover:text-primary-yellow transition-colors" aria-label="Twitter">
+                <i className="fab fa-twitter text-2xl"></i>
+              </a>
+              <a href="#" className="text-white hover:text-primary-yellow transition-colors" aria-label="Instagram">
+                <i className="fab fa-instagram text-2xl"></i>
               </a>
             </div>
           </div>
