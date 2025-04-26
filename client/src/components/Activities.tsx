@@ -79,11 +79,12 @@ const Activities: React.FC<ActivitiesProps> = ({ openLightbox }) => {
                 <div className={`flex flex-col md:flex-row ${language === 'ar' ? 'md:flex-row-reverse' : ''}`}>
                   <div className={`md:w-1/2 activity-img-container mb-6 md:mb-0 ${language === 'ar' ? 'md:ml-6' : 'md:mr-6'}`}>
                     <img 
-                      src={`${event.mainImage}`} 
+                      src={event.mainImage} 
                       alt={event.title[language]} 
                       className="rounded-lg h-full w-full object-cover"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
+                        console.error(`Failed to load image: ${target.src}`);
                         target.onerror = null;
                         target.src = '/images/logo.jpg'; // Fallback image
                       }}
@@ -134,11 +135,12 @@ const Activities: React.FC<ActivitiesProps> = ({ openLightbox }) => {
                           onClick={() => openLightbox(image)}
                         >
                           <img 
-                            src={`${image}`} 
+                            src={image} 
                             alt={`${event.title[language]} - Image ${i+1}`} 
                             className="rounded-lg shadow w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity"
                             onError={(e) => {
                               const target = e.target as HTMLImageElement;
+                              console.error(`Failed to load gallery image: ${target.src}`);
                               target.onerror = null;
                               target.src = '/images/logo.jpg'; // Fallback image
                             }}

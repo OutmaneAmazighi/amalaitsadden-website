@@ -46,6 +46,7 @@ const Lightbox: React.FC<LightboxProps> = ({ imageSrc, onClose }) => {
         className="max-w-[90%] max-h-[90%] object-contain"
         onError={(e) => {
           const target = e.target as HTMLImageElement;
+          console.error(`Failed to load lightbox image: ${target.src}`);
           target.onerror = null;
           target.src = '/images/logo.jpg'; // Fallback image
         }}
