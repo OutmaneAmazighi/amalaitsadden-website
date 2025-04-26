@@ -225,11 +225,16 @@ if [ -d "attached_assets" ]; then
   cp -r attached_assets/* gh-pages-build/assets/attached_assets/ || echo "Warning: Could not copy attached_assets"
 fi
 
-# Create images directory for event images
-echo "Creating images directory structure for events..."
+# Copy all static assets from client/public directory
+echo "Copying all static assets from client/public directory..."
+if [ -d "client/public" ]; then
+  cp -r client/public/* gh-pages-build/ || echo "Warning: Could not copy client/public"
+fi
+
+# Create any additional needed directories for event images
+echo "Creating any missing image directory structure for events..."
 mkdir -p gh-pages-build/images/events
-# You would need to copy actual event images here
-echo "Note: You may need to copy event images manually to the gh-pages-build/images/events directory."
+echo "Event images directory structure is ready."
 
 echo "GitHub Pages build complete!"
 echo "Build output is in the 'gh-pages-build' directory."

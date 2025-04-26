@@ -247,8 +247,14 @@ jobs:
             cp -r attached_assets/* gh-pages-build/assets/attached_assets/ || echo "Warning: Could not copy attached_assets"
           fi
           
-          # Create images directory structure for event images
-          echo "Creating images directory for events..."
+          # Copy static assets from client/public directory
+          echo "Copying all static assets from client/public directory..."
+          if [ -d "client/public" ]; then
+            cp -r client/public/* gh-pages-build/ || echo "Warning: Could not copy client/public"
+          fi
+          
+          # Create any missing images directory structure for event images (in case some are not in public)
+          echo "Ensuring images directory structure for events exists..."
           mkdir -p gh-pages-build/images/events
           mkdir -p gh-pages-build/images/events/medicalcaravan2024jan
           mkdir -p gh-pages-build/images/events/aidconvoy2023
