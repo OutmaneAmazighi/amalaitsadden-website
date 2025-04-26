@@ -76,12 +76,15 @@ body {
 
 @layer base {
   * {
-    @apply border-[hsl(var(--border))];
+    @apply border-gray-200;
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    background-color: #fcfaf7;
+    color: #333;
     font-family: 'Poppins', 'Cairo', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   html {

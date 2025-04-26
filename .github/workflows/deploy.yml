@@ -68,7 +68,7 @@ jobs:
           # Instead, we'll make a backup of it to ensure it's not modified during build
           cp client/index.html client/index.html.bak
           
-          # Update the tailwind.config.ts file to include both path patterns
+          # Update the tailwind.config.ts file with a simpler configuration that doesn't use CSS variables
           cat > tailwind.config.ts << 'EOL'
           import type { Config } from "tailwindcss";
 
@@ -94,45 +94,45 @@ jobs:
               },
               extend: {
                 borderRadius: {
-                  lg: "var(--radius)",
-                  md: "calc(var(--radius) - 2px)",
-                  sm: "calc(var(--radius) - 4px)",
+                  lg: "0.5rem",
+                  md: "0.375rem",
+                  sm: "0.25rem",
                 },
                 colors: {
-                  border: "hsl(var(--border))",
-                  input: "hsl(var(--input))",
-                  ring: "hsl(var(--ring))",
-                  background: "hsl(var(--background))",
-                  foreground: "hsl(var(--foreground))",
+                  border: "#e5e7eb",
+                  input: "#e5e7eb",
+                  ring: "#1f2937",
+                  background: "#fcfaf7",
+                  foreground: "#333333",
                   primary: {
-                    DEFAULT: "hsl(var(--primary))",
-                    foreground: "hsl(var(--primary-foreground))",
+                    DEFAULT: "#4CAF50",
+                    foreground: "#ffffff",
                   },
                   secondary: {
-                    DEFAULT: "hsl(var(--secondary))",
-                    foreground: "hsl(var(--secondary-foreground))",
+                    DEFAULT: "#f3f4f6",
+                    foreground: "#1f2937",
                   },
                   destructive: {
-                    DEFAULT: "hsl(var(--destructive))",
-                    foreground: "hsl(var(--destructive-foreground))",
+                    DEFAULT: "#D32F2F",
+                    foreground: "#ffffff",
                   },
                   muted: {
-                    DEFAULT: "hsl(var(--muted))",
-                    foreground: "hsl(var(--muted-foreground))",
+                    DEFAULT: "#f3f4f6",
+                    foreground: "#6b7280",
                   },
                   accent: {
-                    DEFAULT: "hsl(var(--accent))",
-                    foreground: "hsl(var(--accent-foreground))",
+                    DEFAULT: "#D32F2F",
+                    foreground: "#ffffff",
                   },
                   popover: {
-                    DEFAULT: "hsl(var(--popover))",
-                    foreground: "hsl(var(--popover-foreground))",
+                    DEFAULT: "#ffffff",
+                    foreground: "#1f2937",
                   },
                   card: {
-                    DEFAULT: "hsl(var(--card))",
-                    foreground: "hsl(var(--card-foreground))",
+                    DEFAULT: "#ffffff",
+                    foreground: "#1f2937",
                   },
-                  /* Additional colors */
+                  /* Amazigh-inspired color scheme */
                   "primary-green": "#4CAF50",
                   "primary-dark-green": "#388E3C",
                   "primary-red": "#D32F2F",
