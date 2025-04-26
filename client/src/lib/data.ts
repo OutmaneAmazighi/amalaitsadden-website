@@ -29,43 +29,53 @@ export interface TeamMember {
 // Team members data
 export const teamMembers: TeamMember[] = [
   {
-    name: "Mohammed Alami",
+    name: "Kamal Hassani",
     role: {
-      de: "Vorsitzender",
+      de: "Präsident",
       fr: "Président",
       ar: "رئيس",
       en: "President"
     },
-    photo: "/images/team/president.jpg"
+    photo: "/images/team/avatar1.png"
   },
   {
-    name: "Amina Tazi",
+    name: "Khalid El Jazouli",
     role: {
-      de: "Projektkoordinatorin",
-      fr: "Coordinatrice de projet",
-      ar: "منسقة المشروع",
-      en: "Project Coordinator"
+      de: "Schriftführer",
+      fr: "Secrétaire général",
+      ar: "الكاتب العام",
+      en: "General Secretary"
     },
-    photo: "/images/team/vp.jpg"
+    photo: "/images/team/avatar2.png"
   },
   {
-    name: "Youssef Benali",
+    name: "Outmane Hassani",
     role: {
-      de: "Umweltexperte",
-      fr: "Expert environnemental",
-      ar: "خبير بيئي",
-      en: "Environmental Expert"
+      de: "Mitglied und Medienbeauftragter",
+      fr: "Membre et responsable des médias",
+      ar: "عضو ومسؤول إعلامي",
+      en: "Member and Media Officer"
     },
-    photo: "/images/team/secretary.jpg"
+    photo: "/images/team/avatar3.png"
   },
   {
-    name: "Fatima Ouazzani",
+    name: "Nazih Ghanou",
     role: {
-      de: "Kulturbeauftragte",
-      fr: "Responsable culturelle",
-      ar: "مسؤولة ثقافية",
-      en: "Cultural Officer"
+      de: "Mitglied",
+      fr: "Membre",
+      ar: "عضو",
+      en: "Member"
     },
-    photo: "/images/team/treasurer.jpg"
+    photo: "/images/team/avatar4.png"
+  },
+  {
+    name: "Soumiua Ahari",
+    role: {
+      de: "Mitglied",
+      fr: "Membre",
+      ar: "عضوة",
+      en: "Member"
+    },
+    photo: "/images/team/avatar5.png"
   }
 ];
