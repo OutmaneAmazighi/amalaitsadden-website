@@ -47,9 +47,9 @@ const Activities: React.FC<ActivitiesProps> = ({ openLightbox }) => {
   }, []);
   
   return (
-    <section id="activities" className="py-16 bg-gray-50">
+    <section id="activities" className="py-12 sm:py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className={`text-3xl font-bold primary-green mb-10 text-center ${language === 'ar' ? 'font-amiri' : ''}`}>
+        <h2 className={`text-2xl sm:text-3xl font-bold primary-green mb-6 sm:mb-10 text-center ${language === 'ar' ? 'font-amiri' : ''}`}>
           {translations[language].sections.activities.title}
         </h2>
         
@@ -70,8 +70,8 @@ const Activities: React.FC<ActivitiesProps> = ({ openLightbox }) => {
                     />
                   </div>
                   <div className="md:w-1/2">
-                    <div className={`flex justify-between items-center mb-4 ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
-                      <div className={`bg-primary-green text-white px-4 py-1 rounded-full text-sm ${language === 'ar' ? 'font-amiri' : ''}`}>
+                    <div className={`flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
+                      <div className={`bg-primary-green text-white px-4 py-1 rounded-full text-sm mb-2 sm:mb-0 ${language === 'ar' ? 'font-amiri' : ''}`}>
                         {formatDate(event.date, language)}
                       </div>
                       <div className={`text-gray-500 ${language === 'ar' ? 'font-amiri' : ''}`}>

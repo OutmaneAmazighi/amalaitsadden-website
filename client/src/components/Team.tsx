@@ -32,30 +32,30 @@ const Team: React.FC = () => {
   }, []);
   
   return (
-    <section id="team" className="py-16">
+    <section id="team" className="py-12 sm:py-16">
       <div className="container mx-auto px-4">
-        <h2 className={`text-3xl font-bold primary-green mb-10 text-center ${language === 'ar' ? 'font-amiri' : ''}`}>
+        <h2 className={`text-2xl sm:text-3xl font-bold primary-green mb-6 sm:mb-10 text-center ${language === 'ar' ? 'font-amiri' : ''}`}>
           {translations[language].sections.team.title}
         </h2>
         
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
           {teamMembers.map((member, index) => (
             <div 
               key={index}
               ref={el => (teamRefs.current[index] = el as HTMLDivElement)}
-              className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 opacity-0 w-[150px] text-center"
+              className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 opacity-0 w-[120px] sm:w-[150px] text-center"
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <div className="flex justify-center pt-4">
+              <div className="flex justify-center pt-3 sm:pt-4">
                 <img 
                   src={member.photo} 
                   alt={member.name} 
-                  className="w-20 h-20 rounded-full object-cover border-2 border-primary-green"
+                  className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover border-2 border-primary-green"
                 />
               </div>
-              <div className="p-3">
-                <h3 className="text-sm font-semibold primary-dark-green mb-1">{member.name}</h3>
-                <p className={`text-xs primary-red ${language === 'ar' ? 'font-amiri' : ''}`}>
+              <div className="p-2 sm:p-3">
+                <h3 className="text-xs sm:text-sm font-semibold primary-dark-green mb-1">{member.name}</h3>
+                <p className={`text-[10px] sm:text-xs primary-red ${language === 'ar' ? 'font-amiri' : ''}`}>
                   {member.role[language]}
                 </p>
               </div>
