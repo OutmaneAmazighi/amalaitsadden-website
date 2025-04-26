@@ -2,6 +2,7 @@ import { useContext, useRef, useEffect } from 'react';
 import { LanguageContext } from './LanguageContext';
 import { translations } from '../lib/translations';
 import { teamMembers } from '../lib/data';
+import './Team.css';
 
 const Team: React.FC = () => {
   const { language } = useContext(LanguageContext);
@@ -47,11 +48,12 @@ const Team: React.FC = () => {
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               <div className="flex justify-center pt-4">
-                <img 
-                  src={member.photo} 
-                  alt={member.name} 
-                  className="w-20 h-20 rounded-full object-cover border-2 border-primary-green"
-                />
+                <div 
+                  className={`avatar avatar${index + 1} border-2 border-primary-green`}
+                  aria-label={member.name}
+                >
+                  {member.name.charAt(0)}
+                </div>
               </div>
               <div className="p-3">
                 <h3 className="text-sm font-semibold primary-dark-green mb-1">{member.name}</h3>
