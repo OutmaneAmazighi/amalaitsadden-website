@@ -310,8 +310,8 @@ export const formatDate = (dateString: string, localeString: string) => {
     ];
     const month = arabicMonths[date.getMonth()];
     
-    // Return in format: "20 يناير 2024" with regular numerals
-    return `${day} ${month} ${year}`;
+    // Return in RTL format: "2024 يناير 20" with regular numerals
+    return `${year} ${month} ${day}`;
   }
   
   // For other languages, use the standard format
