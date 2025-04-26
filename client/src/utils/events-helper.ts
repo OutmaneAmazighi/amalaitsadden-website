@@ -360,7 +360,7 @@ export const getProcessedEvents = (): ProcessedEvent[] => {
         en: getTranslatedValue(event.description, 'en')
       },
       mainImage: event.main_photo_url,
-      gallery: event.gallery
+      gallery: event.gallery.map(img => img)
     };
   });
   

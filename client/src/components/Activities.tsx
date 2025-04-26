@@ -79,9 +79,14 @@ const Activities: React.FC<ActivitiesProps> = ({ openLightbox }) => {
                 <div className={`flex flex-col md:flex-row ${language === 'ar' ? 'md:flex-row-reverse' : ''}`}>
                   <div className={`md:w-1/2 activity-img-container mb-6 md:mb-0 ${language === 'ar' ? 'md:ml-6' : 'md:mr-6'}`}>
                     <img 
-                      src={event.mainImage} 
+                      src={`${event.mainImage}`} 
                       alt={event.title[language]} 
                       className="rounded-lg h-full w-full object-cover"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.onerror = null;
+                        target.src = '/images/logo.jpg'; // Fallback image
+                      }}
                     />
                   </div>
                   <div className="md:w-1/2">
@@ -127,9 +132,14 @@ const Activities: React.FC<ActivitiesProps> = ({ openLightbox }) => {
                           onClick={() => openLightbox(image)}
                         >
                           <img 
-                            src={image} 
+                            src={`${image}`} 
                             alt={`${event.title[language]} - Image ${i+1}`} 
                             className="rounded-lg shadow w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity"
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.onerror = null;
+                              target.src = '/images/logo.jpg'; // Fallback image
+                            }}
                           />
                           <div className="absolute inset-0 bg-primary-dark-green bg-opacity-0 hover:bg-opacity-20 transition-opacity flex items-center justify-center cursor-pointer">
                             <i className="fas fa-search-plus text-white text-xl opacity-0 hover:opacity-100 transition-opacity"></i>
